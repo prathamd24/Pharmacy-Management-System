@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low Stock Items - Pharmacy Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h2>Hi, Pratham</h2></div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="/"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+                    <li><a href="/sales"><i class='bx bx-trending-up'></i> Sales</a></li>
+                    <li><a href="/inventory"><i class='bx bxs-package'></i> Inventory</a></li>
+                    <li><a href="/low_stock" class="active"><i class='bx bxs-bell'></i> Low stock</a></li>
+                    <li><a href="#"><i class='bx bxs-user'></i> Profile</a></li>
+                    <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+                </ul>
+            
+            </nav>
+            <button id="add-medicine-btn-sidebar" class="action-btn primary">Add New Medicine</button>
+            <a href="/billing" class="action-btn primary" style="margin-top: 10px; text-align: center; text-decoration: none; display: block;">Create Bill</a>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <button id="menu-btn" class="menu-button"><i class='bx bx-menu'></i></button>
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <input type="text" id="page-search-input" placeholder="Search by name or manufacturer...">
+                </div>
+                <div class="profile-section">
+                    <div id="profile-button" class="profile-button"><i class='bx bxs-user-circle'></i><span></span></div>
+                </div>
+            </header>
+            
+            <div class="card full-width-card">
+                <h3>Medicines with 20 or fewer items</h3>
+                <table class="searchable-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Product Name</th>
+                            <th>Manufacturer</th>
+                            <th>Expiry Date</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in low_stock_items %}
+                        <tr>
+                            <td>{{ item.id }}</td>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.Manufacturer }}</td>
+                            <td>{{ item.expiry_date }}</td>
+                            <td>{{ item.quantity }}</td>
+                            <td><span class="status-cell {{ item.status.className }}">{{ item.status.text }}</span></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <div id="add-medicine-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Medicine</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <form id="add-medicine-form">
+                <div class="form-group">
+                    <label for="medicine-name">Medicine Name</label>
+                    <input type="text" id="medicine-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="Manufacturer-no">Manufacturer</label>
+                    <input type="text" id="Manufacturer-no" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price (per unit)</label>
+                    <input type="number" id="price" required min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="date" id="expiry-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" required min="1">
+                </div>
+                <button type="submit">Add Medicine</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

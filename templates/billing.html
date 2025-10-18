@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Bill - Pharmacy Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h2>Hi, Pratham</h2></div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="/"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+                    <li><a href="/sales"><i class='bx bx-trending-up'></i> Sales</a></li>
+                    <li><a href="/inventory"><i class='bx bxs-package'></i> Inventory</a></li>
+                    <li><a href="/low_stock"><i class='bx bxs-bell'></i> Low stock</a></li>
+                    <li><a href="#"><i class='bx bxs-user'></i> Profile</a></li>
+                    <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+                </ul>
+            </nav>
+            <button id="add-medicine-btn-sidebar" class="action-btn primary">Add New Medicine</button>
+            <a href="/billing" class="action-btn primary" style="margin-top: 10px; text-align: center; text-decoration: none; display: block;">Create Bill</a>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <button id="menu-btn" class="menu-button"><i class='bx bx-menu'></i></button>
+                <h1>Create New Bill</h1>
+            </header>
+
+            <div class="billing-grid">
+                <div class="card">
+                    <div class="search-results-container">
+                        <div class="billing-search-bar">
+                            <i class='bx bx-search'></i>
+                            <input type="text" id="billing-search-input" placeholder="Search for medicine by name or manufacturer...">
+                        </div>
+                        <div id="billing-search-results"></div>
+                    </div>
+                    <div class="content-table" style="margin-top: 20px;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Price (₹)</th>
+                                    <th>Quantity</th>
+                                    <th>Total (₹)</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bill-items-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Bill Summary</h2>
+                    <div class="bill-summary">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">₹0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>GST (5%)</span>
+                            <span id="gst">₹0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Grand Total</span>
+                            <span id="grand-total">₹0.00</span>
+                        </div>
+                    </div>
+                    <div class="bill-actions">
+                        <button id="clear-bill-btn" class="action-btn secondary">Clear Bill</button>
+                        <button id="process-sale-btn" class="action-btn primary">Process Sale</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="add-medicine-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header"><h2>Add New Medicine</h2><span class="close-btn">&times;</span></div>
+            <form id="add-medicine-form">
+                <div class="form-group"><label for="medicine-name">Medicine Name</label><input type="text" id="medicine-name" required></div>
+                <div class="form-group"><label for="Manufacturer-no">Manufacturer</label><input type="text" id="Manufacturer-no" required></div>
+                <div class="form-group"><label for="price">Price (per unit)</label><input type="number" id="price" required min="0" step="0.01"></div>
+                <div class="form-group"><label for="expiry-date">Expiry Date</label><input type="date" id="expiry-date" required></div>
+                <div class="form-group"><label for="quantity">Quantity</label><input type="number" id="quantity" required min="1"></div>
+                <button type="submit">Add Medicine</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmation-modal" class="modal confirmation">
+        <div class="modal-content">
+            <h3>Confirm Sale</h3>
+            <p>Are you sure you want to process this sale?</p>
+            <div class="modal-actions">
+                <button id="cancel-sale-btn" class="action-btn secondary">Cancel</button>
+                <button id="confirm-sale-btn" class="action-btn primary">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

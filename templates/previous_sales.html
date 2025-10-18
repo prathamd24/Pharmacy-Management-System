@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Sales - Pharmacy Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h2>Hi, Pratham</h2></div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="/"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+                    <li><a href="/sales" class="active"><i class='bx bx-trending-up'></i> Sales</a></li>
+                    <li><a href="/inventory"><i class='bx bxs-package'></i> Inventory</a></li>
+                    <li><a href="/low_stock"><i class='bx bxs-bell'></i> Low stock</a></li>
+                    <li><a href="#"><i class='bx bxs-user'></i> Profile</a></li>
+                    <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+                </ul>
+            </nav>
+            <button id="add-medicine-btn-sidebar" class="action-btn primary">Add New Medicine</button>
+            <a href="/billing" class="action-btn primary" style="margin-top: 10px; text-align: center;">Create New Bill</a>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <button class="menu-button" id="menu-btn"><i class='bx bx-menu'></i></button>
+                <h1 class="header-title">Previous Sales Report</h1>
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <input type="text" id="sales-search-input" placeholder="Search by Bill ID or Product Name...">
+                </div>
+            </header>
+
+            <section class="kpi-cards sales-cards">
+                <div class="card">
+                    <div class="card-icon" style="background-color: #e8f5fb;"><i class='bx bx-rupee' style="color: #0077ff;"></i></div>
+                    <div class="card-content">
+                        <p>Total Revenue</p>
+                        <h3 id="total-revenue">₹0.00</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon" style="background-color: #e6f8f0;"><i class='bx bx-receipt' style="color: #50E3C2;"></i></div>
+                    <div class="card-content">
+                        <p>Total Sales (Bills)</p>
+                        <h3 id="total-sales">0</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon" style="background-color: #fef6e6;"><i class='bx bxs-package' style="color: #F5A623;"></i></div>
+                    <div class="card-content">
+                        <p>Total Items Sold</p>
+                        <h3 id="total-items-sold">0</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-table">
+                <h2>Sales Log (Previous)</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Bill ID</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Product Name</th>
+                                <th>Quantity</th>
+                                <th>Unit Price (₹)</th>
+                                <th>Total (₹)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sales-table-body">
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="add-medicine-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Medicine</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <form id="add-medicine-form">
+                <div class="form-group">
+                    <label for="medicine-name">Medicine Name</label>
+                    <input type="text" id="medicine-name" placeholder="e.g., Paracetamol 500mg" required>
+                </div>
+                <div class="form-group">
+                    <label for="Manufacturer-no">Manufacturer</label>
+                    <input type="text" id="Manufacturer-no" placeholder="e.g., Cipla" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price (per unit)</label>
+                    <input type="number" id="price" placeholder="e.g., 2.50" required min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="date" id="expiry-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" placeholder="e.g., 100" required min="0">
+                </div>
+                <button type="submit">Add Medicine</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>

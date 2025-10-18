@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header"><h2>Hi, Pratham</h2></div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="/" class="active"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+                    <li><a href="/sales"><i class='bx bx-trending-up'></i> Sales</a></li>
+                    <li><a href="/inventory"><i class='bx bxs-package'></i> Inventory</a></li>
+                    <li><a href="/low_stock"><i class='bx bxs-bell'></i> Low stock</a></li>
+                    <li><a href="#"><i class='bx bxs-user'></i> Profile</a></li>
+                    <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+                </ul>
+            </nav>
+            <button id="add-medicine-btn-sidebar" class="action-btn primary">Add New Medicine</button>
+            <a href="/billing" class="action-btn primary" style="margin-top: 10px; text-align: center; text-decoration: none; display: block;">Create Bill</a>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <button id="menu-btn" class="menu-button"><i class='bx bx-menu'></i></button>
+                <div class="search-box"><i class='bx bx-search'></i><input type="text" id="search-input" placeholder="Search..."></div>
+                <div class="profile-section">
+                    <div id="profile-button" title="Profile" class="profile-button"><i class='bx bxs-user-circle'></i><span></span></div>
+                </div>
+            </header>
+
+            <div class="kpi-cards">
+                <a href="/sales" class="card-link">
+                    <div class="card clickable-card">
+                        <div class="card-icon blue"><i class='bx bx-trending-up'></i></div>
+                        <div class="card-content">
+                            <p>Today's Sales</p>
+                            <h3 id="todays-sales-value">₹0</h3> <span>Updated anytime</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="card" id="total-inventory-card"><div  class="card-icon green"><i class='bx bxs-package'></i></div><div class="card-content"><p>Total Inventory</p><h3 id="total-inventory-value">0</h3><span>Total units in stock</span></div></div>
+                <div class="card clickable-card" id="low-stock-card"><div class="card-icon red"><i class='bx bx-bell'></i></div><div class="card-content"><p>Low Stock Items</p><h3 id="low-stock-value">0</h3><span>Items needing attention</span></div></div>
+            </div>
+
+            <div class="data-grid">
+                <div class="card table-card large">
+                    <h3>Expiring in Next 30 Days</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Manufacturer</th>
+                                <th>Expiry Date</th>
+                                <th>Qty</th>
+                                <th>Status</th> </tr>
+                        </thead>
+                        <tbody id="inventory-table-body"></tbody>
+                    </table>
+                </div>
+                <div class="card donut-chart-card">
+                    <h3>Inventory Status</h3>
+                    <div class="donut-chart-container">
+                        <div id="donut-chart" class="donut-chart"></div>
+                        <div class="donut-legend">
+                            <ul>
+                                <li>
+                                    <span class="dot in-stock"></span>In Stock
+                                    <span id="in-stock-percent" class="percent">0%</span>
+                                </li>
+                                <li>
+                                    <span class="dot expiring-soon"></span>Expiring Soon
+                                    <span id="expiring-soon-percent" class="percent">0%</span>
+                                </li>
+                                <li>
+                                    <span class="dot low-stock"></span>Low Stock
+                                    <span id="low-stock-percent" class="percent">0%</span>
+                                </li>
+                                <li>
+                                    <span class="dot out-of-stock"></span>Out of Stock
+                                    <span id="out-of-stock-percent" class="percent">0%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card full-width-card" id="full-inventory-section">
+                <h3>Full Inventory</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Product Name</th>
+                            <th>Manufacturer</th>
+                            <th>Expiry Date</th>
+                            <th>Quantity</th>
+                            <th>Status</th> </tr>
+                    </thead>
+                    <tbody id="full-inventory-table-body"></tbody>
+                </table>
+                <div class="card-footer">
+                    <button id="load-more-btn" class="view-all-btn">More</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="add-medicine-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Medicine</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <form id="add-medicine-form">
+                <div class="form-group">
+                    <label for="medicine-name">Medicine Name</label>
+                    <input type="text" id="medicine-name" placeholder="e.g., Paracetamol 500mg" required>
+                </div>
+                <div class="form-group">
+                    <label for="Manufacturer-no">Manufacturer</label>
+                    <input type="text" id="Manufacturer-no" placeholder="e.g., Cipla" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price (per unit)</label>
+                    <input type="number" id="price" placeholder="e.g., 2.50" required min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="date" id="expiry-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" placeholder="e.g., 100" required min="0">
+                </div>
+                <button type="submit">Add Medicine</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
