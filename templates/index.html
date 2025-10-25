@@ -12,15 +12,16 @@
     
     <div class="dashboard-container">
         <aside class="sidebar">
-            <div class="sidebar-header"><h2>Hi, Pratham</h2></div>
+            <div class="sidebar-header"><h2>Hi, {{ username }}</h2></div>
             <nav class="sidebar-nav">
                 <ul>
                     <li><a href="/" class="active"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
                     <li><a href="/sales"><i class='bx bx-trending-up'></i> Sales</a></li>
                     <li><a href="/inventory"><i class='bx bxs-package'></i> Inventory</a></li>
                     <li><a href="/low_stock"><i class='bx bxs-bell'></i> Low stock</a></li>
-                    <li><a href="#"><i class='bx bxs-user'></i> Profile</a></li>
-                    <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+                    <li><a href="/account"><i class='bx bxs-user'></i> Profile</a></li>
+
+                    <li><a href="#" id="logout-btn-sidebar"><i class='bx bx-log-out'></i> Logout</a></li>
                 </ul>
             </nav>
             <button id="add-medicine-btn-sidebar" class="action-btn primary">Add New Medicine</button>
@@ -32,7 +33,7 @@
                 <button id="menu-btn" class="menu-button"><i class='bx bx-menu'></i></button>
                 <div class="search-box"><i class='bx bx-search'></i><input type="text" id="search-input" placeholder="Search..."></div>
                 <div class="profile-section">
-                    <div id="profile-button" title="Profile" class="profile-button"><i class='bx bxs-user-circle'></i><span></span></div>
+                    <a href="/account" id="profile-button" title="Profile" class="profile-button"><i class='bx bxs-user-circle'></i></a>
                 </div>
             </header>
 
@@ -52,7 +53,7 @@
 
             <div class="data-grid">
                 <div class="card table-card large">
-                    <h3>Expiring in Next 30 Days</h3>
+                    <h3>Expiring in Next 90 Days</h3>
                     <table>
                         <thead>
                             <tr>
@@ -145,6 +146,17 @@
             </form>
         </div>
     </div>
+    <div id="logout-confirm-modal" class="modal confirmation">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3>Confirm Logout</h3>
+        <p>Are you sure you want to log out?</p>
+        <div class="modal-actions">
+            <button id="cancel-logout-btn" class="action-btn secondary">Cancel</button>
+            <a href="/logout" class="action-btn primary">Logout</a>
+        </div>
+    </div>
+</div>
 
     <script src="/static/script.js"></script>
 </body>

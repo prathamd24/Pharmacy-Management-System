@@ -1,0 +1,4 @@
+bill_id,date,time,product_id,product_name,quantity,unit_price,total_amount
+1,2025-10-25,22:35:33,1,Dettol,1,48.8,48.8
+2,2025-10-25,22:46:59,101,Paracetamol 500mg,1,25,25.0
+3,2025-10-26,00:02:40,72,ORS,1,372.86,372.86

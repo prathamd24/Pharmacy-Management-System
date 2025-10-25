@@ -1,0 +1,102 @@
+id,name,Manufacturer,expiry_date,quantity,price
+1,Dettol,Cipla,2027-08-29,84,48.8
+2,Niclosamide,Bayer,2026-10-28,184,129.18
+3,Cetirizine,Mankind Pharma,2026-12-30,117,84.65
+4,Ondansetron,Bayer,2026-05-11,80,169.73
+5,Ondansetron,Cipla,2026-03-05,150,456.85
+6,Disprin,Zydus Cadila,2026-02-25,13,371.87
+7,Disprin,Alkem Labs,2027-06-19,155,473.46
+8,Calcium,Cipla,2027-03-29,116,169.93
+9,Insulin,Aurobindo Pharma,2026-09-04,163,315.2
+10,Albendazole,Zydus Cadila,2026-12-20,104,24.91
+11,Allegra,Sanofi,2027-03-18,7,209.61
+12,Metformin,GlaxoSmithKline,2026-08-22,85,24.57
+13,Ibuprofen,Lupin,2027-01-31,56,185.66
+14,Omeprazole,GlaxoSmithKline,2026-11-12,75,381.19
+15,Iron Supplement,Lupin,2027-01-23,52,136.46
+16,Betadine,Aurobindo Pharma,2026-01-22,74,222.45
+17,Losartan,Aurobindo Pharma,2026-02-11,110,492.17
+18,Ondansetron,Sun Pharma,2026-07-30,120,41.46
+19,Metformin,Glenmark,2026-03-15,1,437.52
+20,Omeprazole,Mankind Pharma,2026-12-15,66,363.97
+21,Cetirizine,Sun Pharma,2026-12-28,89,141.02
+22,Savlon,Alkem Labs,2026-07-02,27,240.27
+23,Mebendazole,Merck,2027-02-22,198,331.05
+24,Mebendazole,Bayer,2026-10-08,43,379.71
+25,Digene,Zydus Cadila,2026-12-03,0,18.34
+26,Cetirizine,Bayer,2026-02-10,161,389.21
+27,Cetirizine,Zydus Cadila,2026-10-01,174,338.34
+28,Allegra,Aurobindo Pharma,2026-10-16,54,477.86
+29,Iron Supplement,Mankind Pharma,2026-10-03,63,52.59
+30,Niclosamide,Johnson & Johnson,2026-10-02,96,427.18
+31,Hydroxychloroquine,Johnson & Johnson,2027-02-24,119,166.64
+32,Bifilac,Zydus Cadila,2026-09-20,193,113.06
+33,Insulin,Cipla,2026-06-17,76,67.82
+34,Ciprofloxacin,Glenmark,2026-04-19,92,260.41
+35,Gaviscon,Dr. Reddy's,2026-10-20,24,409.96
+36,Niclosamide,Sun Pharma,2027-03-16,27,184.24
+37,Mebendazole,Lupin,2026-05-27,193,168.54
+38,Vitamin D,Glenmark,2026-01-02,31,383.32
+39,Cough Syrup,Johnson & Johnson,2026-04-24,164,249.32
+40,Zinc Tablet,Abbott,2026-04-23,89,269.9
+41,Ciprofloxacin,Bayer,2026-11-17,62,92.47
+42,Bifilac,Zydus Cadila,2026-09-10,197,410.72
+43,Syrup Liv52,Abbott,2026-04-07,125,80.02
+44,Electral,Sanofi,2027-01-10,45,266.86
+45,Ciprofloxacin,Lupin,2026-07-30,7,113.55
+46,Ibuprofen,GlaxoSmithKline,2027-03-13,63,78.79
+47,Lactobacillus,Aurobindo Pharma,2026-11-01,34,217.48
+48,Electral,Novartis,2027-09-09,91,429.39
+49,Gaviscon,Pfizer,2026-08-12,89,488.11
+50,Savlon,Bayer,2026-12-09,95,198.02
+51,Iron Supplement,Merck,2027-03-09,182,489.58
+52,Cough Syrup,Lupin,2027-06-14,90,360.16
+53,Crocin,Dr. Reddy's,2026-05-26,49,239.48
+54,Dettol,Bayer,2026-07-22,23,177.02
+55,Domperidone,GlaxoSmithKline,2026-08-20,131,286.66
+56,Savlon,Novartis,2027-07-21,9,40.83
+57,Niclosamide,Abbott,2026-09-04,42,319.96
+58,Chloroquine,Merck,2027-04-17,128,462.69
+59,Electral,Glenmark,2026-10-09,100,148.93
+60,Aspirin,Zydus Cadila,2026-05-11,156,158.51
+61,Chloroquine,Lupin,2026-03-19,171,456.43
+62,Clarithromycin,Dr. Reddy's,2027-08-23,196,50.52
+63,Ranitidine,Sanofi,2027-07-07,32,435.44
+64,Dexamethasone,Cipla,2026-07-05,41,486.39
+65,Dexamethasone,Lupin,2026-03-26,112,36.62
+66,Albendazole,Abbott,2027-07-19,185,35.79
+67,Pantoprazole,Dr. Reddy's,2027-01-27,28,302.58
+68,Albendazole,Novartis,2026-07-28,135,63.06
+69,Paracetamol,Alkem Labs,2027-04-04,23,471.0
+70,Niclosamide,Abbott,2027-03-14,96,244.67
+71,Gaviscon,Pfizer,2026-12-12,188,224.13
+72,ORS,Mankind Pharma,2026-12-24,12,372.86
+73,Niclosamide,Mankind Pharma,2026-03-09,117,177.47
+74,Metformin,Merck,2026-12-11,124,363.14
+75,Savlon,Bayer,2027-07-10,26,236.38
+76,Dolo-650,Merck,2027-05-20,57,163.88
+77,Bifilac,Sanofi,2026-11-05,114,342.44
+78,Dettol,Dr. Reddy's,2026-12-30,32,178.99
+79,Domperidone,Abbott,2026-09-20,27,161.15
+80,Syrup Liv52,Alkem Labs,2026-01-05,174,334.42
+81,Vitamin D,Abbott,2027-04-03,77,396.69
+82,Ranitidine,Dr. Reddy's,2026-12-13,82,450.55
+83,Ranitidine,Johnson & Johnson,2027-04-02,16,275.94
+84,Mebendazole,Zydus Cadila,2027-05-14,154,316.33
+85,Albendazole,GlaxoSmithKline,2026-05-17,161,290.65
+86,Chloroquine,Johnson & Johnson,2026-08-11,89,239.3
+87,Losartan,Cipla,2026-08-25,157,205.48
+88,Levofloxacin,Sanofi,2027-03-14,94,229.2
+89,Omeprazole,Zydus Cadila,2027-01-14,133,355.43
+90,Ibuprofen,Merck,2026-12-09,31,252.35
+91,Lactobacillus,Dr. Reddy's,2026-10-24,136,190.86
+92,Dolo-650,GlaxoSmithKline,2026-01-29,157,418.65
+93,Lactobacillus,Merck,2027-02-18,146,61.91
+94,Crocin,Abbott,2026-12-03,153,422.59
+95,Dexamethasone,Sanofi,2026-05-27,78,384.85
+96,Prednisolone,Merck,2027-01-23,29,428.1
+97,Niclosamide,Johnson & Johnson,2026-10-23,115,288.38
+98,Ciprofloxacin,Abbott,2026-07-10,180,85.42
+99,Domperidone,Lupin,2026-03-22,77,468.23
+100,Omeprazole,Sun Pharma,2027-05-27,62,346.99
+101,Paracetamol 500mg,Cipla,2026-09-24,244,25

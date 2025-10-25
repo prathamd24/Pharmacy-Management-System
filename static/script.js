@@ -16,10 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Active Navigation Link
         const navLinks = document.querySelectorAll('.sidebar-nav a');
         navLinks.forEach(link => {
-            if ((link.getAttribute('href') === '/sales' || link.getAttribute('href') === '/previous_sales') && (currentPath === '/sales' || currentPath === '/previous_sales')) {
+            // Updated logic to correctly highlight sales link
+            if (link.getAttribute('href') === '/sales' && currentPath === '/sales') {
                 link.classList.add('active');
-            } else if (link.getAttribute('href') === currentPath) {
-                link.classList.add('active');
+            } else if (link.getAttribute('href') !== '/sales' && link.getAttribute('href') === currentPath) {
+                 link.classList.add('active');
             }
         });
 
@@ -31,8 +32,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (addBtnSidebar) addBtnSidebar.onclick = () => { if (modal) modal.style.display = 'block'; };
         if (closeBtn) closeBtn.onclick = () => { if (modal) modal.style.display = 'none'; };
-        window.onclick = (event) => { if (event.target == modal) modal.style.display = 'none'; };
+        
+        // Updated window.onclick to handle multiple modals
+        window.onclick = (event) => {
+            // Handle Add Medicine Modal
+            if (modal && event.target == modal) {
+                modal.style.display = 'none';
+            }
+            
+            // Handle Expiring Soon Modal (if it exists on the page)
+            const expiringSoonModal = document.getElementById('expiring-soon-modal');
+            if (expiringSoonModal && event.target == expiringSoonModal) {
+                expiringSoonModal.style.display = 'none';
+            }
 
+            // Handle Logout Modal (NEW)
+            const logoutModal = document.getElementById('logout-confirm-modal');
+            if (logoutModal && event.target == logoutModal) {
+                logoutModal.style.display = 'none';
+            }
+
+            // Handle Billing Confirmation Modal
+            const confirmationModal = document.getElementById('confirmation-modal');
+             if (confirmationModal && event.target == confirmationModal) {
+                confirmationModal.style.display = 'none';
+            }
+        };
+    
         if (form) {
             form.addEventListener('submit', async (event) => {
                 event.preventDefault();
@@ -51,13 +77,17 @@ document.addEventListener('DOMContentLoaded', () => {
                         body: JSON.stringify(medicineData)
                     });
                     const result = await response.json();
-                    alert(result.message || 'Action completed successfully!');
+                    
                     if (result.success) {
+                        alert(result.message || 'Action completed successfully!');
                         modal.style.display = 'none';
                         form.reset();
+                        // Reload page unless we are on the billing page
                         if (currentPath !== '/billing') {
                             location.reload();
                         }
+                    } else {
+                         alert(result.message || 'An error occurred.');
                     }
                 } catch (error) {
                     console.error('Failed to add/update medicine:', error);
@@ -65,6 +95,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
+        
+        // --- (NEW) LOGOUT MODAL LOGIC ---
+        const logoutBtn = document.getElementById('logout-btn-sidebar');
+        const logoutModal = document.getElementById('logout-confirm-modal');
+        const cancelLogoutBtn = document.getElementById('cancel-logout-btn');
+        const logoutModalCloseBtn = document.querySelector('#logout-confirm-modal .close-btn');
+
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default link behavior
+                if (logoutModal) logoutModal.style.display = 'block';
+            });
+        }
+        if (cancelLogoutBtn) {
+            cancelLogoutBtn.addEventListener('click', () => {
+                if (logoutModal) logoutModal.style.display = 'none';
+            });
+        }
+        if (logoutModalCloseBtn) {
+            logoutModalCloseBtn.addEventListener('click', () => {
+                if (logoutModal) logoutModal.style.display = 'none';
+            });
+        }
+        // --- END OF NEW LOGIC ---
+
     };
 
     setupUniversalComponents();
@@ -73,6 +128,47 @@ document.addEventListener('DOMContentLoaded', () => {
     //  DASHBOARD PAGE ('/') LOGIC
     // ===================================
     if (currentPath === '/') {
+        // Handle "View Expiring Soon" modal
+        const expiringModal = document.getElementById('expiring-soon-modal');
+        const expiringLink = document.getElementById('view-expiring-soon-link');
+        const closeExpiringModal = document.getElementById('close-expiring-modal');
+
+        if (expiringLink) {
+            expiringLink.onclick = (e) => {
+                e.preventDefault();
+                // API call now uses 90 days
+                fetch('/api/inventory/expiring_soon') 
+                    .then(res => res.json())
+                    .then(items => {
+                        const tableBody = document.getElementById('expiring-soon-table-body');
+                        tableBody.innerHTML = '';
+                        if (items.length === 0) {
+                            tableBody.innerHTML = '<tr><td colspan="6">No items are expiring soon.</td></tr>';
+                        } else {
+                            items.forEach(item => {
+                                tableBody.innerHTML += `
+                                    <tr>
+                                        <td>${item.id}</td>
+                                        <td>${item.name}</td>
+                                        <td>${item.Manufacturer}</td>
+                                        <td>${item.expiry_date}</td>
+                                        <td>${item.quantity}</td>
+                                        <td>${item.price}</td>
+                                    </tr>
+                                `;
+                            });
+                        }
+                        expiringModal.style.display = 'block';
+                    });
+            }
+        }
+
+        if(closeExpiringModal) {
+            closeExpiringModal.onclick = () => {
+                expiringModal.style.display = 'none';
+            }
+        }
+    
         let fullInventory = [];
         let displayedItemsCount = 0;
         const itemsPerLoad = 5;
@@ -141,6 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const renderInventorySlice = () => {
             const tableBody = document.getElementById('full-inventory-table-body');
+            if (!tableBody) return;
             const itemsToRender = fullInventory.slice(displayedItemsCount, displayedItemsCount + itemsPerLoad);
 
             itemsToRender.forEach(item => {
@@ -212,7 +309,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         console.error('Search failed:', error);
                     }
                 } else if (query.length === 0) {
-                    fetchFullInventory();
+                    // Reset to full inventory if search is cleared
+                    const tableBody = document.getElementById('full-inventory-table-body');
+                    if(tableBody) tableBody.innerHTML = '';
+                    displayedItemsCount = 0;
+                    renderInventorySlice(); // Re-render the initial slice
                 }
             });
         }
@@ -234,6 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
         
+        // Initial data fetches
         fetchKpiData();
         fetchStatusDistribution();
         fetchExpiringSoon();
@@ -251,7 +353,6 @@ document.addEventListener('DOMContentLoaded', () => {
             searchInput.addEventListener('keyup', () => {
                 const query = searchInput.value.toLowerCase().trim();
                 const rows = tableBody.querySelectorAll('tr');
-
                 rows.forEach(row => {
                     const productName = row.cells[1].textContent.toLowerCase();
                     const manufacturer = row.cells[2].textContent.toLowerCase();
@@ -262,80 +363,124 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ===================================
-    //  SALES & PREVIOUS SALES PAGE LOGIC
+    //  SALES REPORT PAGE LOGIC
     // ===================================
-    if (currentPath === '/sales' || currentPath === '/previous_sales') {
-        let currentSalesData = [];
+    if (currentPath === '/sales') {
+        let currentSalesData = []; // Holds the data for searching
         const searchInput = document.getElementById('sales-search-input');
         const tableBody = document.getElementById('sales-table-body');
         const pageTitle = document.getElementById('page-title');
+        const filterTabs = document.querySelectorAll('.filter-tab');
 
-        const fetchSalesKpis = async (kpiEndpoint) => {
-            try {
-                const response = await fetch(kpiEndpoint);
-                const data = await response.json();
-                document.getElementById('total-revenue').textContent = `₹${(data.total_revenue || 0).toFixed(2)}`;
-                document.getElementById('total-transactions').textContent = data.total_transactions || 0;
-                document.getElementById('total-items-sold').textContent = data.total_items_sold || 0;
-            } catch (error) {
-                console.error('Failed to load sales KPIs:', error);
-            }
-        };
-
+        // Re-usable function to render the table
         const renderSalesTable = (sales) => {
             if (!tableBody) return;
             tableBody.innerHTML = '';
-            sales.sort((a, b) => b.bill_id - a.bill_id);
-            sales.forEach(sale => {
-                const row = tableBody.insertRow();
-                row.innerHTML = `
-                    <td>#${sale.bill_id}</td>
-                    <td>${sale.date} ${sale.time}</td>
-                    <td>${sale.product_name}</td>
-                    <td>${sale.quantity}</td>
-                    <td>₹${parseFloat(sale.unit_price || 0).toFixed(2)}</td>
-                    <td>₹${parseFloat(sale.total_amount || 0).toFixed(2)}</td>
-                `;
+            
+            // Sort by Bill ID (newest first)
+            sales.sort((a, b) => {
+                const idA = parseInt(a.bill_id, 10);
+                const idB = parseInt(b.bill_id, 10);
+                return idB - idA;
             });
-        };
-        
-        const fetchSalesData = async (dataEndpoint) => {
-            try {
-                const response = await fetch(dataEndpoint);
-                currentSalesData = await response.json();
-                renderSalesTable(currentSalesData);
-            } catch (error) {
-                console.error('Failed to load sales data:', error);
+
+            if (sales.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="6">No sales data found for this period.</td></tr>';
+            } else {
+                sales.forEach(sale => {
+                    const row = tableBody.insertRow();
+                    row.innerHTML = `
+                        <td>#${sale.bill_id}</td>
+                        <td>${sale.date} ${sale.time}</td>
+                        <td>${sale.product_name}</td>
+                        <td>${sale.quantity}</td>
+                        <td>₹${parseFloat(sale.unit_price || 0).toFixed(2)}</td>
+                        <td>₹${parseFloat(sale.total_amount || 0).toFixed(2)}</td>
+                    `;
+                });
             }
         };
 
-        const filterSales = () => {
-            const query = searchInput.value.toLowerCase().trim();
-            const filtered = query ? currentSalesData.filter(sale => 
-                sale.bill_id.toString().includes(query) || 
-                sale.product_name.toLowerCase().includes(query)
-            ) : currentSalesData;
-            renderSalesTable(filtered);
+        // Main function to load all data based on filter
+        const loadSalesData = async (filter) => {
+            // 1. Set active tab
+            filterTabs.forEach(tab => {
+                tab.classList.toggle('active', tab.dataset.filter === filter);
+            });
+
+            // 2. Update Page Title and KPI Labels
+            const kpiLabels = {
+                revenue: document.querySelector('#total-revenue-card-link p'),
+                transactions: document.querySelector('#total-transactions-card-link p'),
+                items: document.querySelector('#previous-sales-card-link p') // Note: ID seems mismatched, but following HTML
+            };
+
+            if (filter === 'today') {
+                pageTitle.textContent = "Today's Sales";
+                if(kpiLabels.revenue) kpiLabels.revenue.textContent = "Today's Revenue";
+                if(kpiLabels.transactions) kpiLabels.transactions.textContent = "Today's Transactions";
+                if(kpiLabels.items) kpiLabels.items.textContent = "Today's Items Sold";
+            } else if (filter === 'monthly') { 
+                pageTitle.textContent = "This Month's Sales";
+                if(kpiLabels.revenue) kpiLabels.revenue.textContent = "This Month's Revenue";
+                if(kpiLabels.transactions) kpiLabels.transactions.textContent = "This Month's Transactions";
+                if(kpiLabels.items) kpiLabels.items.textContent = "This Month's Items Sold";
+            } else if (filter === 'all') {
+                pageTitle.textContent = "All Time Sales";
+                if(kpiLabels.revenue) kpiLabels.revenue.textContent = "Total Revenue";
+                if(kpiLabels.transactions) kpiLabels.transactions.textContent = "Total Transactions";
+                if(kpiLabels.items) kpiLabels.items.textContent = "Total Items Sold";
+            }
+
+            // 3. Define endpoints based on filter
+            let kpiEndpoint = `/api/sales/kpi_summary/${filter}`;
+            let dataEndpoint = `/api/sales/${filter}`;
+
+            // 4. Fetch and update KPIs
+            try {
+                const kpiResponse = await fetch(kpiEndpoint);
+                const kpiData = await kpiResponse.json();
+                document.getElementById('total-revenue').textContent = `₹${(kpiData.total_revenue || 0).toFixed(2)}`;
+                document.getElementById('total-transactions').textContent = kpiData.total_transactions || 0;
+                document.getElementById('total-items-sold').textContent = kpiData.total_items_sold || 0;
+            } catch (error) {
+                console.error(`Failed to load KPIs for ${filter}:`, error);
+            }
+
+            // 5. Fetch, store, and render table data
+            try {
+                const dataResponse = await fetch(dataEndpoint);
+                currentSalesData = await dataResponse.json(); // Store for searching
+                renderSalesTable(currentSalesData); // Render full data
+                if (searchInput) searchInput.value = ''; // Clear search on tab change
+            } catch (error) {
+                console.error(`Failed to load sales data for ${filter}:`, error);
+            }
         };
 
+        // Add click handlers to filter tabs
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                loadSalesData(tab.dataset.filter);
+            });
+        });
+
+        // Search functionality
         if (searchInput) {
-            searchInput.addEventListener('keyup', filterSales);
+            searchInput.addEventListener('keyup', () => {
+                const query = searchInput.value.toLowerCase().trim();
+                const filteredData = currentSalesData.filter(sale => {
+                    return sale.product_name.toLowerCase().includes(query) ||
+                           sale.bill_id.toString().includes(query) ||
+                           sale.date.includes(query);
+                });
+                renderSalesTable(filteredData);
+            });
         }
 
-        if (currentPath === '/sales') {
-            if (pageTitle) pageTitle.textContent = "Today's Sales";
-            fetchSalesKpis('/api/sales/kpi_summary/today');
-            fetchSalesData('/api/sales/today');
-        } else { // /previous_sales
-            if (pageTitle) pageTitle.textContent = "Previous Sales";
-            fetchSalesKpis('/api/sales/kpi_summary/previous');
-            fetchSalesData('/api/sales/previous/all');
-            document.querySelector('#total-revenue-card-link p').textContent = "Previous Revenue";
-            document.querySelector('#total-transactions-card-link p').textContent = "Previous Transactions";
-            document.querySelector('#previous-sales-card-link p').textContent = "Previous Items Sold";
-        }
+        // Initial load (default to 'today')
+        loadSalesData('today');
     }
-    
     // ===================================
     //  BILLING PAGE LOGIC
     // ===================================
@@ -380,9 +525,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const gst = subtotal * 0.05;
             const grandTotal = subtotal + gst;
 
-            subtotalEl.textContent = `₹${subtotal.toFixed(2)}`;
-            gstEl.textContent = `₹${gst.toFixed(2)}`;
-            grandTotalEl.textContent = `₹${grandTotal.toFixed(2)}`;
+            if(subtotalEl) subtotalEl.textContent = `₹${subtotal.toFixed(2)}`;
+            if(gstEl) gstEl.textContent = `₹${gst.toFixed(2)}`;
+            if(grandTotalEl) grandTotalEl.textContent = `₹${grandTotal.toFixed(2)}`;
         };
 
         const performSearch = async () => {

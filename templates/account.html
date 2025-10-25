@@ -3,37 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Report - Pharmacy Dashboard</title>
+    <title>My Profile - Pharmacy Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/static/style.css">
-    
-    <style>
-        .filter-tabs {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .filter-tab {
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: 500;
-            border: none;
-            background-color: #f0f2f5;
-            color: #555;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .filter-tab.active {
-            background-color: #007bff;
-            color: #ffffff;
-            box-shadow: 0 4px 10px rgba(0,123,255,0.3);
-        }
-        .filter-tab:hover:not(.active) {
-            background-color: #e2e6ea;
-        }
-    </style>
+
+</head>
 </head>
 <body>
     <div class="dashboard-container">
@@ -45,87 +20,45 @@
                     <li><a href="/sales"><i class='bx bx-trending-up'></i> Sales</a></li>
                     <li><a href="/inventory"><i class='bx bxs-package'></i> Inventory</a></li>
                     <li><a href="/low_stock"><i class='bx bxs-bell'></i> Low stock</a></li>
-                    <li><a href="/account"><i class='bx bxs-user'></i> Profile</a></li>
-
+                    <li><a href="/account" class="active"><i class='bx bxs-user'></i> Profile</a></li>
                     <li><a href="#" id="logout-btn-sidebar"><i class='bx bx-log-out'></i> Logout</a></li>
                 </ul>
-                </ul>
             </nav>
+            
             <button id="add-medicine-btn-sidebar" class="action-btn primary">Add New Medicine</button>
             <a href="/billing" class="action-btn primary" style="margin-top: 10px; text-align: center; text-decoration: none; display: block;">Create Bill</a>
         </aside>
 
-        <main class="main-content">
-            <header class="main-header">
+    <main class="main-content">
+    <header class="main-header">
                 <button id="menu-btn" class="menu-button"><i class='bx bx-menu'></i></button>
-                <h1 id="page-title">Sales Report</h1>
                 <div class="profile-section">
                     <a href="/account" id="profile-button" title="Profile" class="profile-button"><i class='bx bxs-user-circle'></i></a>
                 </div>
             </header>
 
-            <div class="filter-tabs">
-                <button class="filter-tab active" data-filter="today">Today</button>
-                <button class="filter-tab" data-filter="monthly">This Month</button>
-                <button class="filter-tab" data-filter="all">All Time</button>
+    <div class="content-wrapper">
+        <div class="card-large profile-card">
+            <div class="card-header">
+                <h2><i class='bx bxs-user-circle'></i> Account Information</h2>
             </div>
-            <div class="kpi-cards">
-                <a href="#" class="card-link" id="total-revenue-card-link">
-                    <div class="card clickable-card">
-                        <div class="card-icon blue"><i class='bx bx-dollar'></i></div>
-                        <div class="card-content">
-                            <p>Total Revenue</p>
-                            <h3 id="total-revenue">₹0.00</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link" id="total-transactions-card-link">
-                    <div class="card clickable-card">
-                        <div class="card-icon green"><i class='bx bx-transfer'></i></div>
-                        <div class="card-content">
-                            <p>Total Transactions</p>
-                            <h3 id="total-transactions">0</h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card-link" id="previous-sales-card-link">
-                    <div class="card clickable-card">
-                        <div class="card-icon red"><i class='bx bx-basket'></i></div>
-                        <div class="card-content">
-                            <p>Total Items Sold</p>
-                            <h3 id="total-items-sold">0</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="card full-width-card">
-                <div class="card-header">
-                    <h3>Sales Details</h3>
-                    <div class="search-box">
-                        <i class='bx bx-search'></i>
-                        <input type="text" id="sales-search-input" placeholder="Search by Bill ID or Product...">
-                    </div>
-                </div>
-                
-                <div class="table-wrapper searchable-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Bill ID</th>
-                                <th>Date & Time</th>
-                                <th>Product Name</th>
-                                <th>Qty</th>
-                                <th>Unit Price</th>
-                                <th>Total</th>
-                            </tr>
-                        </thead>
-                        <tbody id="sales-table-body">
-                            </tbody>
-                    </table>
+            <div class="card-body">
+                <div class="profile-info">
+                    <p><strong>Username:</strong></p>
+                    <h3>{{ username }}</h3>
+                    <p>This is the username associated with your account and your data files.</p>
                 </div>
             </div>
-        </main>
+        </div>
+
+        <div class="card-small summary-card">
+            <h3>Profile Summary</h3>
+            <p>Welcome back, {{ username }}! You can manage your inventory, track sales, and monitor low-stock alerts from the sidebar. Keep your profile updated to ensure smooth operations.</p>
+        </div>
+    </div>
+</main>
+
+
     </div>
 
     <div id="add-medicine-modal" class="modal">
@@ -159,6 +92,7 @@
             </form>
         </div>
     </div>
+
     <div id="logout-confirm-modal" class="modal confirmation">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
@@ -170,7 +104,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="/static/script.js"></script>
 </body>
 </html>
