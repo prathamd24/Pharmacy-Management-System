@@ -1,0 +1,653 @@
+﻿/* ================================================================
+   PHARMA MS  —  Complete Design System  v2.0
+   Theme: Deep Navy + Medical Teal + Emerald Green
+   ================================================================ */
+
+/* ── Variables ─────────────────────────────────────────────── */
+:root {
+  --bg:           #060d1f;
+  --bg-surface:   #0a1628;
+  --bg-elevated:  #0f2248;
+
+  --pharma:       #00d4aa;
+  --pharma-dark:  #00a884;
+  --pharma-glow:  rgba(0,212,170,0.18);
+  --blue:         #3b82f6;
+  --blue-light:   #60a5fa;
+  --blue-glow:    rgba(59,130,246,0.18);
+
+  --status-green:  #10b981;
+  --status-orange: #f59e0b;
+  --status-red:    #ef4444;
+  --status-purple: #8b5cf6;
+
+  --text:        #e2e8f0;
+  --text-muted:  rgba(226,232,240,0.55);
+  --text-dim:    rgba(226,232,240,0.28);
+
+  --glass:         rgba(255,255,255,0.04);
+  --glass-md:      rgba(255,255,255,0.07);
+  --glass-hover:   rgba(255,255,255,0.10);
+  --border:        rgba(255,255,255,0.07);
+  --border-light:  rgba(255,255,255,0.12);
+
+  --shadow-sm: 0 2px 10px rgba(0,0,0,0.35);
+  --shadow-md: 0 6px 24px rgba(0,0,0,0.45);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.6);
+
+  --sidebar-w: 220px;
+  --r-sm:  8px;
+  --r-md:  12px;
+  --r-lg:  16px;
+  --r-xl:  22px;
+}
+
+/* ── Reset ─────────────────────────────────────────────────── */
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Poppins',sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+a { text-decoration:none; }
+ul { list-style:none; }
+button { cursor:pointer; font-family:inherit; }
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar { width:5px; height:5px; }
+::-webkit-scrollbar-track { background:rgba(255,255,255,0.02); }
+::-webkit-scrollbar-thumb { background:rgba(0,212,170,0.28); border-radius:10px; }
+::-webkit-scrollbar-thumb:hover { background:rgba(0,212,170,0.5); }
+
+/* ================================================================
+   AUTH PAGES  (login & register)
+   ================================================================ */
+body.auth-page {
+  background:linear-gradient(135deg,#060d1f 0%,#081a3a 40%,#0c2260 70%,#060d1f 100%);
+  background-size:300% 300%;
+  animation:authBg 14s ease infinite;
+  display:flex; align-items:center; justify-content:center;
+}
+@keyframes authBg {
+  0%,100% { background-position:0% 50%; }
+  50%     { background-position:100% 50%; }
+}
+body.auth-page::before {
+  content:''; position:fixed; width:480px; height:480px;
+  background:radial-gradient(circle,rgba(0,212,170,0.1) 0%,transparent 70%);
+  top:-140px; left:-100px; border-radius:50%; pointer-events:none;
+  animation:orbDrift 11s ease-in-out infinite alternate;
+}
+body.auth-page::after {
+  content:''; position:fixed; width:380px; height:380px;
+  background:radial-gradient(circle,rgba(59,130,246,0.1) 0%,transparent 70%);
+  bottom:-90px; right:-70px; border-radius:50%; pointer-events:none;
+  animation:orbDrift 14s ease-in-out infinite alternate-reverse;
+}
+@keyframes orbDrift {
+  from { transform:translate(0,0) scale(1); }
+  to   { transform:translate(40px,30px) scale(1.15); }
+}
+
+.auth-container {
+  position:relative; z-index:1;
+  display:flex; justify-content:center; align-items:center;
+  min-height:100vh; width:100%; padding:24px;
+}
+
+.auth-card {
+  width:100%; max-width:440px;
+  background:rgba(8,20,50,0.78);
+  backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px);
+  border:1px solid rgba(0,212,170,0.15);
+  border-radius:var(--r-xl);
+  padding:44px 44px 40px;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.04) inset, var(--shadow-lg);
+  animation:cardIn 0.5s cubic-bezier(0.22,1,0.36,1) both;
+}
+@keyframes cardIn {
+  from { opacity:0; transform:translateY(24px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+.auth-brand { display:flex; flex-direction:column; align-items:center; margin-bottom:10px; }
+.auth-logo-ring {
+  width:70px; height:70px;
+  background:linear-gradient(135deg,var(--pharma),var(--blue));
+  border-radius:50%; display:flex; align-items:center; justify-content:center;
+  margin-bottom:14px;
+  box-shadow:0 0 0 8px rgba(0,212,170,0.12),0 4px 24px rgba(0,212,170,0.35);
+  animation:ringPulse 3s ease-in-out infinite;
+}
+@keyframes ringPulse {
+  0%,100% { box-shadow:0 0 0 8px rgba(0,212,170,0.12),0 4px 24px rgba(0,212,170,0.35); }
+  50%     { box-shadow:0 0 0 14px rgba(0,212,170,0.05),0 4px 32px rgba(0,212,170,0.5); }
+}
+.auth-logo-ring i { font-size:2.1rem; color:#fff; }
+.auth-brand h2 { font-size:1.5rem; font-weight:700; color:#fff; letter-spacing:0.5px; }
+
+.auth-subtitle {
+  text-align:center; color:var(--text-muted); font-size:0.9rem;
+  margin:6px 0 26px;
+}
+
+.auth-card .alert {
+  display:flex; align-items:center; gap:8px;
+  padding:11px 15px; border-radius:var(--r-sm);
+  font-size:0.87rem; font-weight:500; border:none; margin-bottom:16px;
+  animation:alertIn 0.3s ease;
+}
+@keyframes alertIn { from{opacity:0;transform:scale(0.96);} to{opacity:1;transform:scale(1);} }
+.auth-card .alert-danger  { background:rgba(239,68,68,0.18);  color:#fca5a5; }
+.auth-card .alert-success { background:rgba(16,185,129,0.18); color:#6ee7b7; }
+.auth-card .alert-info    { background:rgba(59,130,246,0.18); color:#93c5fd; }
+
+.auth-card .form-group { margin-bottom:18px; }
+.auth-card .form-label {
+  display:block; color:rgba(255,255,255,0.8);
+  font-size:0.85rem; font-weight:600; margin-bottom:8px;
+}
+
+.input-wrapper { position:relative; display:flex; align-items:center; }
+.input-icon {
+  position:absolute; left:14px; font-size:1.1rem;
+  color:rgba(255,255,255,0.32); pointer-events:none; transition:color 0.2s;
+}
+.auth-card .form-control {
+  width:100%; padding:13px 16px 13px 42px;
+  background:rgba(255,255,255,0.07);
+  border:1.5px solid rgba(255,255,255,0.12);
+  border-radius:var(--r-sm); color:#fff; font-size:0.95rem;
+  transition:border-color 0.25s,background 0.25s,box-shadow 0.25s; outline:none;
+  font-family:'Poppins',sans-serif;
+}
+.auth-card .form-control::placeholder { color:var(--text-dim); }
+.auth-card .form-control:focus {
+  border-color:var(--pharma); background:rgba(255,255,255,0.1);
+  box-shadow:0 0 0 3px rgba(0,212,170,0.18);
+}
+.auth-card .form-group:focus-within .input-icon { color:var(--pharma); }
+
+.auth-submit-btn {
+  display:flex; align-items:center; justify-content:center; gap:8px;
+  width:100%; padding:14px;
+  background:linear-gradient(90deg,var(--pharma),var(--blue));
+  color:#fff; font-size:1rem; font-weight:700; border:none;
+  border-radius:var(--r-sm); letter-spacing:0.4px;
+  box-shadow:0 4px 20px rgba(0,212,170,0.35);
+  transition:transform 0.18s,box-shadow 0.18s,filter 0.18s; margin-top:6px;
+}
+.auth-submit-btn:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(0,212,170,0.45); filter:brightness(1.08); }
+.auth-submit-btn:active { transform:scale(0.98); }
+.auth-submit-btn i { font-size:1.1rem; }
+
+.auth-switch { text-align:center; margin-top:22px; color:var(--text-muted); font-size:0.87rem; }
+.auth-switch a { color:var(--pharma); font-weight:600; margin-left:5px; transition:color 0.2s; }
+.auth-switch a:hover { color:#5eead4; text-decoration:underline; }
+
+.btn,.btn-secondary {
+  display:inline-block; padding:3px 12px;
+  background:rgba(0,212,170,0.12); border:1px solid rgba(0,212,170,0.3);
+  border-radius:20px; color:#5eead4; font-size:0.8rem; font-weight:600;
+  margin:0 4px; transition:background 0.2s;
+}
+.btn:hover,.btn-secondary:hover { background:rgba(0,212,170,0.22); text-decoration:none !important; color:#5eead4; }
+
+/* ================================================================
+   DASHBOARD LAYOUT
+   ================================================================ */
+body.app-page {
+  background:
+    radial-gradient(ellipse at 0% 0%,rgba(0,212,170,0.05) 0%,transparent 55%),
+    radial-gradient(ellipse at 100% 100%,rgba(59,130,246,0.05) 0%,transparent 55%),
+    linear-gradient(160deg,#060d1f 0%,#07101f 50%,#060d1f 100%);
+  background-attachment:fixed;
+}
+
+.dashboard-container {
+  display:flex; width:100%; height:100vh; overflow:hidden;
+}
+
+/* ── Sidebar ───────────────────────────────────────────────── */
+.sidebar {
+  width:var(--sidebar-w);
+  background:rgba(5,11,26,0.95);
+  backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+  border-right:1px solid var(--border);
+  display:flex; flex-direction:column;
+  padding:0 0 20px; flex-shrink:0;
+  transform:translateX(0);
+  transition:transform 0.35s ease,width 0.35s ease,padding 0.35s ease;
+  box-shadow:4px 0 32px rgba(0,0,0,0.5);
+  position:relative; overflow:hidden;
+}
+
+/* Pharma gradient stripe at top */
+.sidebar::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background:linear-gradient(90deg,var(--pharma),var(--blue));
+}
+
+.sidebar-header {
+  padding:24px 20px 0;
+}
+.sidebar-header h2 {
+  font-size:0.95rem; font-weight:700; margin-bottom:22px; padding-bottom:16px;
+  border-bottom:1px solid var(--border);
+  background:linear-gradient(90deg,var(--pharma),var(--blue-light));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+
+.sidebar-nav { flex-grow:1; padding:0 12px; }
+.sidebar-nav li a {
+  display:flex; align-items:center;
+  padding:11px 12px; margin-bottom:3px;
+  border-radius:var(--r-sm); color:var(--text-muted);
+  font-weight:500; font-size:0.88rem;
+  transition:all 0.22s ease; border:1px solid transparent;
+}
+.sidebar-nav li a i { font-size:1.15rem; margin-right:10px; flex-shrink:0; }
+.sidebar-nav li a:hover {
+  background:var(--glass-md); color:var(--text); border-color:var(--border);
+}
+.sidebar-nav li a.active {
+  background:linear-gradient(90deg,rgba(0,212,170,0.18),rgba(59,130,246,0.08));
+  color:var(--pharma); border-color:rgba(0,212,170,0.22);
+  font-weight:600; box-shadow:0 2px 12px rgba(0,212,170,0.08);
+}
+
+.sidebar > .action-btn,
+.sidebar > a.action-btn {
+  margin:8px 12px 0; width:calc(100% - 24px);
+  display:flex; align-items:center; justify-content:center;
+  padding:12px; border-radius:var(--r-sm);
+  border:none; font-size:0.88rem; font-weight:700;
+  cursor:pointer; transition:all 0.2s ease;
+}
+button.action-btn.primary,
+a.action-btn.primary {
+  background:linear-gradient(90deg,var(--pharma),var(--blue));
+  color:#fff; box-shadow:0 4px 16px rgba(0,212,170,0.3);
+}
+button.action-btn.primary:hover,
+a.action-btn.primary:hover {
+  filter:brightness(1.1); transform:translateY(-1px);
+  box-shadow:0 6px 24px rgba(0,212,170,0.4);
+}
+.action-btn.secondary {
+  background:var(--glass-md); color:var(--text);
+  border:1px solid var(--border-light) !important;
+}
+.action-btn.secondary:hover { background:var(--glass-hover); }
+
+.dashboard-container.sidebar-hidden .sidebar {
+  transform:translateX(-100%); width:0; padding:0; overflow:hidden;
+}
+
+/* ── Main content ───────────────────────────────────────────── */
+.main-content { flex-grow:1; padding:20px; overflow-y:auto; }
+
+/* ── Top Header bar ─────────────────────────────────────────── */
+.main-header {
+  display:grid; grid-template-columns:auto 1fr auto;
+  align-items:center; gap:16px; margin-bottom:22px;
+  background:rgba(255,255,255,0.03);
+  backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg); padding:12px 20px;
+  box-shadow:var(--shadow-sm);
+}
+
+.menu-button {
+  background:none; border:none; font-size:1.7rem;
+  color:var(--text-muted); cursor:pointer; transition:color 0.2s;
+  display:flex; align-items:center;
+}
+.menu-button:hover { color:var(--text); }
+
+.search-box {
+  display:flex; align-items:center;
+  background:rgba(255,255,255,0.04);
+  padding:9px 16px; border-radius:50px;
+  border:1px solid var(--border);
+  width:100%; max-width:420px; justify-self:center;
+  transition:border-color 0.22s,box-shadow 0.22s;
+}
+.search-box:focus-within { border-color:var(--pharma); box-shadow:0 0 0 3px rgba(0,212,170,0.12); }
+.search-box i { color:var(--text-muted); font-size:1.05rem; }
+.search-box input {
+  background:none; border:none; outline:none;
+  margin-left:10px; width:100%; color:var(--text);
+  font-family:'Poppins',sans-serif; font-size:0.88rem;
+}
+.search-box input::placeholder { color:var(--text-dim); }
+
+.profile-section { justify-self:end; }
+.profile-button { display:flex; align-items:center; cursor:pointer; }
+.profile-button i { font-size:34px; color:var(--pharma); }
+
+.main-header h1 {
+  color:var(--text); font-size:1.2rem; font-weight:700; justify-self:center;
+}
+
+/* ── KPI Cards ──────────────────────────────────────────────── */
+.kpi-cards {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px; margin-bottom:20px;
+}
+.card {
+  background:rgba(255,255,255,0.04);
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  border:1px solid var(--border); border-radius:var(--r-lg); padding:22px;
+  box-shadow:var(--shadow-sm);
+  transition:transform 0.22s ease,box-shadow 0.22s ease,border-color 0.22s ease;
+}
+.card:hover { transform:translateY(-3px); box-shadow:var(--shadow-md); border-color:var(--border-light); }
+
+.card-icon {
+  width:44px; height:44px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.35rem; margin-bottom:16px;
+}
+.card-icon.blue  { background:rgba(59,130,246,0.16);  color:#60a5fa; }
+.card-icon.green { background:rgba(16,185,129,0.16);  color:#34d399; }
+.card-icon.red   { background:rgba(239,68,68,0.16);   color:#f87171; }
+
+.card-content p    { color:var(--text-muted); font-size:0.84rem; margin-bottom:4px; }
+.card-content h3   { color:var(--text); font-size:1.75rem; font-weight:700; }
+.card-content span { color:var(--text-dim); font-size:0.78rem; }
+
+.card-link { text-decoration:none; color:inherit; }
+.clickable-card { cursor:pointer; }
+.clickable-card:hover { transform:translateY(-4px); border-color:rgba(0,212,170,0.3); }
+
+/* ── Data grid ──────────────────────────────────────────────── */
+.data-grid { display:grid; grid-template-columns:2fr 1fr; gap:16px; }
+
+/* ── Card headings ──────────────────────────────────────────── */
+.card h3 {
+  color:var(--text); font-size:0.95rem; font-weight:600;
+  margin-bottom:14px; padding-bottom:11px;
+  border-bottom:1px solid var(--border);
+}
+.card .card-header {
+  display:flex; justify-content:space-between; align-items:center;
+  margin-bottom:14px; padding-bottom:11px; border-bottom:1px solid var(--border);
+}
+.card .card-header h3 { margin:0; padding:0; border:none; }
+.card .card-header h2 { color:var(--text); font-size:1rem; font-weight:700; }
+
+.full-width-card { margin-top:16px; }
+.full-width-card h3 {
+  color:var(--text); font-size:0.95rem; font-weight:600;
+  margin-bottom:14px; padding-bottom:11px; border-bottom:1px solid var(--border);
+}
+.card-footer { text-align:center; padding-top:14px; margin-top:10px; border-top:1px solid var(--border); }
+
+/* ── Tables ─────────────────────────────────────────────────── */
+table { width:100%; border-collapse:collapse; }
+th {
+  padding:10px 14px; text-align:left;
+  color:var(--text-muted); font-size:0.73rem; font-weight:600;
+  text-transform:uppercase; letter-spacing:0.7px;
+  border-bottom:1px solid var(--border);
+}
+td {
+  padding:12px 14px; text-align:left;
+  color:var(--text); font-size:0.87rem;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+}
+thead tr { border-bottom:1px solid var(--border-light); }
+tbody tr { transition:background 0.15s; }
+tbody tr:last-child td { border-bottom:none; }
+tbody tr:hover { background:rgba(0,212,170,0.04); }
+
+/* ── Donut chart & legend ───────────────────────────────────── */
+.donut-chart-container { display:flex; flex-direction:column; align-items:center; }
+.donut-chart { width:100%; min-height:130px; }
+.donut-legend ul { padding:0; margin-top:12px; width:100%; }
+.donut-legend li { display:flex; align-items:center; padding:4px 0; color:var(--text-muted); font-size:0.83rem; }
+.donut-legend .dot { width:9px; height:9px; border-radius:50%; margin-right:9px; flex-shrink:0; }
+.dot.in-stock       { background:#10b981; box-shadow:0 0 5px rgba(16,185,129,0.5); }
+.dot.expiring-soon  { background:#8b5cf6; box-shadow:0 0 5px rgba(139,92,246,0.5); }
+.dot.low-stock      { background:#f59e0b; box-shadow:0 0 5px rgba(245,158,11,0.5); }
+.dot.out-of-stock   { background:#ef4444; box-shadow:0 0 5px rgba(239,68,68,0.5); }
+.percent { margin-left:auto; font-weight:700; color:var(--text); }
+
+/* ── Status Badges ──────────────────────────────────────────── */
+.status-cell {
+  display:inline-block; padding:4px 12px;
+  border-radius:20px; font-size:0.76rem; font-weight:600;
+  text-align:center; min-width:90px;
+}
+.status-in-stock      { background:rgba(16,185,129,0.15); color:#34d399; border:1px solid rgba(16,185,129,0.22); }
+.status-expiring-soon { background:rgba(139,92,246,0.15); color:#a78bfa; border:1px solid rgba(139,92,246,0.22); }
+.status-low-stock     { background:rgba(245,158,11,0.15); color:#fbbf24; border:1px solid rgba(245,158,11,0.22); }
+.status-out-of-stock  { background:rgba(239,68,68,0.15);  color:#f87171; border:1px solid rgba(239,68,68,0.22); }
+.status-expired       { background:rgba(239,68,68,0.10);  color:#f87171; border:1px solid rgba(239,68,68,0.18); }
+
+/* ── Load-more button ───────────────────────────────────────── */
+.view-all-btn {
+  padding:10px 26px; border:none;
+  background:linear-gradient(90deg,var(--pharma),var(--blue));
+  color:#fff; border-radius:var(--r-sm);
+  cursor:pointer; font-weight:600; font-size:0.87rem;
+  box-shadow:0 4px 14px rgba(0,212,170,0.28);
+  transition:all 0.2s;
+}
+.view-all-btn:hover { filter:brightness(1.1); transform:translateY(-1px); box-shadow:0 6px 20px rgba(0,212,170,0.4); }
+
+/* ================================================================
+   MODALS
+   ================================================================ */
+@keyframes fadeIn    { from{opacity:0;} to{opacity:1;} }
+@keyframes slideDown { from{transform:translateY(-24px);opacity:0;} to{transform:translateY(0);opacity:1;} }
+
+.modal {
+  display:none; position:fixed; z-index:1000;
+  left:0; top:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.72); backdrop-filter:blur(5px);
+  animation:fadeIn 0.22s ease; overflow-y:auto;
+}
+.modal-content {
+  background:rgba(5,11,28,0.97);
+  backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px);
+  margin:5% auto; padding:32px;
+  border-radius:var(--r-xl); width:90%; max-width:520px;
+  border:1px solid rgba(0,212,170,0.18);
+  border-top:4px solid var(--pharma);
+  box-shadow:0 24px 64px rgba(0,0,0,0.7);
+  position:relative; animation:slideDown 0.32s ease;
+  text-align:center;
+}
+.modal-header {
+  display:flex; justify-content:space-between; align-items:center;
+  margin-bottom:22px; text-align:left;
+}
+.modal-header h2 { color:var(--text); font-size:1.35rem; font-weight:700; margin:0; }
+.modal-content h3 { color:var(--text); font-size:1.25rem; font-weight:700; margin-bottom:8px; }
+.modal-content p  { color:var(--text-muted); margin:8px 0 22px; font-size:0.93rem; }
+
+.close-btn {
+  position:absolute; top:16px; right:20px;
+  background:none; border:none; font-size:1.8rem; line-height:1;
+  color:var(--text-muted); cursor:pointer;
+  transition:color 0.2s,transform 0.2s; float:none;
+}
+.close-btn:hover { color:var(--status-red); transform:rotate(90deg); }
+.close-btn:focus { color:var(--text-muted); }
+
+.modal-actions { display:flex; gap:12px; justify-content:center; }
+.modal-actions .action-btn { flex:1; padding:12px; border-radius:var(--r-sm); border:none; font-weight:700; font-size:0.9rem; }
+.modal-actions .action-btn.primary { background:linear-gradient(90deg,var(--pharma),var(--blue)); color:#fff; box-shadow:0 4px 14px rgba(0,212,170,0.3); }
+.modal-actions .action-btn.secondary { background:var(--glass-md); color:var(--text); border:1px solid var(--border-light) !important; }
+
+/* Modal form fields */
+.form-group { margin-bottom:18px; text-align:left; }
+.form-group label {
+  display:block; margin-bottom:7px; font-weight:600;
+  font-size:0.85rem; color:rgba(255,255,255,0.8);
+}
+.form-group input {
+  width:100%; padding:12px 14px;
+  background:rgba(255,255,255,0.06);
+  border:1.5px solid var(--border-light);
+  border-radius:var(--r-sm); color:var(--text); font-size:0.9rem;
+  transition:border-color 0.22s,box-shadow 0.22s;
+  font-family:'Poppins',sans-serif;
+}
+.form-group input::placeholder { color:var(--text-dim); }
+.form-group input:focus {
+  outline:none; border-color:var(--pharma);
+  box-shadow:0 0 0 3px rgba(0,212,170,0.15);
+  background:rgba(255,255,255,0.09);
+}
+
+#add-medicine-form button {
+  width:100%; padding:13px;
+  background:linear-gradient(90deg,var(--pharma),var(--blue));
+  color:#fff; border:none; border-radius:var(--r-sm);
+  font-size:0.92rem; font-weight:700; margin-top:12px;
+  box-shadow:0 4px 16px rgba(0,212,170,0.3);
+  transition:all 0.2s; cursor:pointer;
+}
+#add-medicine-form button:hover { filter:brightness(1.1); transform:translateY(-1px); }
+#add-medicine-form button:active { transform:scale(0.98); }
+
+/* ================================================================
+   BILLING PAGE
+   ================================================================ */
+.billing-grid { display:grid; grid-template-columns:2fr 1fr; gap:20px; align-items:flex-start; }
+.search-results-container { position:relative; }
+
+.billing-search-bar { position:relative; }
+.billing-search-bar i { position:absolute; left:14px; top:50%; transform:translateY(-50%); color:var(--text-muted); font-size:1.2rem; pointer-events:none; }
+.billing-search-bar input {
+  width:100%; padding:13px 16px 13px 44px;
+  background:rgba(255,255,255,0.06); border:1.5px solid var(--border-light);
+  border-radius:var(--r-sm); color:var(--text); font-size:0.92rem;
+  transition:border-color 0.22s,box-shadow 0.22s; font-family:'Poppins',sans-serif;
+}
+.billing-search-bar input::placeholder { color:var(--text-dim); }
+.billing-search-bar input:focus {
+  outline:none; border-color:var(--pharma);
+  box-shadow:0 0 0 3px rgba(0,212,170,0.15);
+  background:rgba(255,255,255,0.09);
+}
+
+#billing-search-results {
+  position:absolute; top:calc(100% + 6px); left:0; right:0;
+  background:rgba(5,11,28,0.98); backdrop-filter:blur(20px);
+  border:1px solid var(--border-light); border-radius:var(--r-md);
+  box-shadow:var(--shadow-lg); z-index:100; max-height:260px; overflow-y:auto; display:none;
+}
+.search-result-item {
+  padding:12px 16px; cursor:pointer; color:var(--text); font-size:0.88rem;
+  border-bottom:1px solid var(--border); transition:background 0.15s;
+}
+.search-result-item:last-child { border-bottom:none; }
+.search-result-item:hover { background:rgba(0,212,170,0.1); color:var(--pharma); }
+.text-light { color:var(--text-muted); font-size:0.82rem; }
+
+.bill-summary .summary-row {
+  display:flex; justify-content:space-between; padding:9px 0; font-size:0.9rem;
+  color:var(--text-muted); border-bottom:1px solid var(--border);
+}
+.bill-summary .summary-row:last-child { border-bottom:none; }
+.bill-summary .summary-row span:last-child { color:var(--text); font-weight:600; }
+.bill-summary .summary-row.total {
+  font-size:1.12rem; font-weight:700; color:var(--text);
+  margin-top:8px; padding-top:12px;
+  border-top:2px solid var(--pharma); border-bottom:none;
+}
+.bill-summary .summary-row.total span:last-child { color:var(--pharma); }
+
+.bill-actions { display:flex; gap:12px; margin-top:20px; }
+.bill-actions .action-btn { flex:1; padding:12px; border-radius:var(--r-sm); border:none; font-weight:700; font-size:0.9rem; cursor:pointer; }
+
+.quantity-input {
+  width:62px; text-align:center; padding:5px 8px;
+  background:rgba(255,255,255,0.06); border:1px solid var(--border-light);
+  border-radius:var(--r-sm); color:var(--text); font-family:'Poppins',sans-serif;
+}
+.remove-item-btn {
+  background:none; border:none; color:var(--status-red);
+  font-size:1.4rem; cursor:pointer; transition:transform 0.2s,color 0.2s;
+}
+.remove-item-btn:hover { color:#fca5a5; transform:scale(1.2); }
+
+/* ================================================================
+   SALES PAGE
+   ================================================================ */
+.filter-tabs { display:flex; gap:10px; margin-bottom:20px; }
+.filter-tab {
+  padding:9px 22px; font-size:0.88rem; font-weight:600;
+  border:1px solid var(--border-light); background:rgba(255,255,255,0.04);
+  color:var(--text-muted); border-radius:var(--r-md); cursor:pointer;
+  transition:all 0.22s; font-family:'Poppins',sans-serif;
+}
+.filter-tab:hover:not(.active) { background:var(--glass-md); color:var(--text); border-color:rgba(255,255,255,0.18); }
+.filter-tab.active {
+  background:linear-gradient(90deg,var(--pharma),var(--blue));
+  color:#fff; border-color:transparent;
+  box-shadow:0 4px 16px rgba(0,212,170,0.32);
+}
+
+/* ================================================================
+   PROFILE / ACCOUNT PAGE
+   ================================================================ */
+.content-wrapper { display:flex; flex-direction:column; gap:20px; padding:4px 0; }
+.card-large, .card-small {
+  background:rgba(255,255,255,0.04); backdrop-filter:blur(12px);
+  border:1px solid var(--border); border-radius:var(--r-lg);
+  padding:26px; box-shadow:var(--shadow-sm);
+}
+.profile-card { border-left:3px solid var(--pharma); }
+.profile-card .card-header h2 { color:var(--text); font-size:1.05rem; font-weight:700; display:flex; align-items:center; gap:10px; }
+.profile-card .card-header h2 i { color:var(--pharma); }
+.profile-info p { color:var(--text-muted); font-size:0.9rem; margin-top:6px; line-height:1.6; }
+.profile-info h3 { color:var(--pharma); font-size:1.25rem; font-weight:700; }
+.additional-info p { color:var(--text-muted); font-size:0.9rem; margin:5px 0; }
+.summary-card { border-left:3px solid var(--blue); background:rgba(59,130,246,0.04); }
+.summary-card h3 { color:var(--blue-light); font-size:0.98rem; font-weight:700; margin-bottom:10px; }
+.summary-card p  { color:var(--text-muted); font-size:0.9rem; line-height:1.7; }
+
+/* ================================================================
+   FLASH ALERTS  (app pages)
+   ================================================================ */
+.alert {
+  display:flex; align-items:center; gap:8px;
+  padding:12px 16px; border-radius:var(--r-sm);
+  font-size:0.87rem; font-weight:500; border:none; margin-bottom:16px;
+}
+.alert-danger  { background:rgba(239,68,68,0.14);  color:#fca5a5; border-left:3px solid var(--status-red); }
+.alert-success { background:rgba(16,185,129,0.14); color:#6ee7b7; border-left:3px solid var(--status-green); }
+.alert-info    { background:rgba(59,130,246,0.14); color:#93c5fd; border-left:3px solid var(--blue); }
+
+/* ================================================================
+   INVOICE / PRINT
+   ================================================================ */
+.invoice-box {
+  background:#fff; width:210mm; max-width:95%; padding:40px;
+  border-radius:var(--r-sm); box-shadow:var(--shadow-lg);
+  color:#333; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size:14px; line-height:1.6;
+}
+.invoice-header { display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid #eee; padding-bottom:10px; margin-bottom:20px; }
+.invoice-header h2 { margin:0; font-size:2rem; color:#000; font-weight:300; }
+.store-details,.invoice-meta { font-size:.9rem; color:#555; line-height:1.5; }
+.invoice-meta { text-align:right; }
+.invoice-table { width:100%; border-collapse:collapse; font-size:.9rem; }
+.invoice-table thead th { background:#f9f9f9; padding:12px; border-bottom:2px solid #ddd; text-align:left; font-weight:600; }
+.invoice-table tbody td { padding:12px; border-bottom:1px solid #eee; }
+.invoice-summary { margin-top:30px; display:flex; justify-content:flex-end; }
+.invoice-summary table { width:45%; font-size:1rem; }
+.invoice-summary .total { font-weight:bold; font-size:1.1rem; border-top:2px solid #333; }
+.signature-line { margin-top:60px; padding-top:10px; border-top:1px solid #ccc; width:50%; text-align:center; font-size:.9rem; color:#555; }
+.invoice-footer { margin-top:20px; text-align:center; font-size:.8rem; color:#777; }
+#print-invoice-btn,.invoice-box .close-btn { background:none; border:none; font-size:1.8rem; cursor:pointer; color:#888; }
+#print-invoice-btn:hover,.invoice-box .close-btn:hover { color:#000; }
+
+@media print {
+  body * { visibility:hidden; }
+  .invoice-box,.invoice-box * { visibility:visible; }
+  .modal { position:absolute; left:0; top:0; width:100%; height:auto; background:none; padding:0; overflow:visible; }
+  .invoice-box { box-shadow:none; border-radius:0; width:100%; max-width:100%; margin:0; padding:0; }
+  .invoice-header .close-btn,#print-invoice-btn { display:none; }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pharmacy Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+    }
+    .navbar {
+      background: #0d6efd;
+      color: white;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .container {
+      padding: 20px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .card p {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #0d6efd;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+    th {
+      background: #f1f1f1;
+    }
+    .demo-banner {
+      background: #fff3cd;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .btn {
+      background: #0d6efd;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn.disabled {
+      background: #999;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div>💊 Pharmacy Management</div>
+    <div>
+      {% if is_demo %}
+        Guest Demo
+      {% else %}
+        {{ current_user.username }}
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="container">
+
+    {% if is_demo %}
+    <div class="demo-banner">
+      ⚠ You are viewing DEMO data.
+      <a href="/exit-demo">Create your own pharmacy →</a>
+    </div>
+    {% endif %}
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Medicines</h3>
+        <p>{{ inventory|length }}</p>
+      </div>
+      <div class="card">
+        <h3>Total Sales</h3>
+        <p>{{ sales|length }}</p>
+      </div>
+      <div class="card">
+        <h3>Monthly Revenue</h3>
+        <p>₹ {{ sales | sum(attribute='amount') }}</p>
+      </div>
+    </div>
+
+    <h2>📦 Inventory</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Expiry</th>
+      </tr>
+      {% for item in inventory %}
+      <tr>
+        <td>{{ item.name if item.name else item['name'] }}</td>
+        <td>{{ item.qty if item.qty else item['qty'] }}</td>
+        <td>₹ {{ item.price if item.price else item['price'] }}</td>
+        <td>{{ item.expiry if item.expiry else item['expiry'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>🧾 Recent Sales</h2>
+    <table>
+      <tr>
+        <th>Invoice</th>
+        <th>Date</th>
+        <th>Amount</th>
+      </tr>
+      {% for sale in sales %}
+      <tr>
+        <td>{{ sale.invoice if sale.invoice else sale['invoice'] }}</td>
+        <td>{{ sale.date if sale.date else sale['date'] }}</td>
+        <td>₹ {{ sale.amount if sale.amount else sale['amount'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <br>
+
+    {% if is_demo %}
+      <a class="btn disabled">➕ Add Medicine</a>
+      <a class="btn disabled">🧾 Create Bill</a>
+    {% else %}
+      <a class="btn" href="/add-medicine">➕ Add Medicine</a>
+      <a class="btn" href="/create-bill">🧾 Create Bill</a>
+    {% endif %}
+
+  </div>
+
+</body>
+</html>

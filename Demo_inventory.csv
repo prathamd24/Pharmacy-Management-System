@@ -1,0 +1,1003 @@
+id,name,Manufacturer,expiry_date,quantity,price
+1,Niacin 125mg cream,Torrent Pharma,2025-07-03,35,1475.58
+2,Topiramate,Wockhardt,2023-12-23,151,849.62
+3,Azithromycin 500mg tablet,Wockhardt,2025-03-25,183,1303.27
+4,Phenylephrine,Bayer,2026-02-13,0,1520.03
+5,Iron,Abbott,2026-02-12,39,438.47
+6,Promethazine 100mg suspension,Glenmark,2027-01-10,88,1211.41
+7,Metformin,Wockhardt,2024-05-26,96,166.81
+8,Levothyroxine,Hetero Labs,2027-01-21,147,392.65
+9,Losartan 500mg cream,Dr. Reddy's,2025-08-11,25,766.45
+10,Loperamide,Pfizer,2024-10-28,94,716.99
+11,Gabapentin 250mcg capsule,Hetero Labs,2024-12-01,136,1460.96
+12,Iron,Mankind Pharma,2025-06-18,175,655.32
+13,Propranolol,Torrent Pharma,2023-05-12,80,808.32
+14,Losartan 1mg gel,Zydus Cadila,2028-08-06,101,1770.52
+15,Rivastigmine,Mankind Pharma,2024-07-25,63,1492.53
+16,Erythromycin 1mg suspension,Alembic,2027-06-24,92,446.45
+17,Vitamin C,Dr. Reddy's,2023-07-12,28,314.15
+18,Iron,Sanofi,2023-09-18,98,769.42
+19,Orlistat,Wockhardt,2023-02-17,174,1444.24
+20,Levetiracetam,Indoco Remedies,2025-12-28,196,1285.51
+21,Cetirizine 250mg drop,Cipla,2025-12-14,128,1526.3
+22,Ketoconazole,Merck,2026-05-07,163,1020.25
+23,Hydrocortisone 250mg tablet,Hetero Labs,2026-08-20,125,48.76
+24,Citalopram,Biocon,2025-09-07,14,489.33
+25,Sodium Bicarbonate,Dr. Reddy's,2028-06-13,17,1956.19
+26,Erythromycin,Lupin,2028-04-30,140,338.6
+27,Salicylic Acid,Sanofi,2025-05-17,138,1512.98
+28,Valproate 5ml suspension,Galderma,2027-03-10,112,1800.23
+29,Cetirizine-D 500mg capsule,Abbott,2023-03-28,150,1112.3
+30,Insulin Glargine 100mg tablet,Torrent Pharma,2023-10-04,8,1720.67
+31,Atorvastatin,Mankind Pharma,2028-06-11,54,1083.08
+32,Azathioprine,Alembic,2028-04-20,62,1571.39
+33,Ramipril 100mg suspension,Pfizer,2027-10-01,105,939.38
+34,Cyclophosphamide 250mcg capsule,Sun Pharma,2027-07-08,186,685.21
+35,Ranitidine 500mg drop,Lupin,2027-09-25,46,564.3
+36,Doxycycline,Dr. Reddy's,2027-12-21,140,204.84
+37,Donepezil,Cipla,2024-01-18,192,1698.9
+38,Folic Acid,Emcure,2025-05-25,102,1805.86
+39,Folic Acid 20mg cream,Bayer,2026-03-14,108,1396.22
+40,Cyclophosphamide,Wockhardt,2028-06-16,39,387.9
+41,Budesonide,Alembic,2023-09-07,191,634.07
+42,Glibenclamide,MacLeods,2028-12-15,40,123.19
+43,Clotrimazole 250mg capsule,Hetero Labs,2023-10-06,172,1725.02
+44,Enalapril 1mg injection,Alembic,2023-06-12,158,173.15
+45,Pregabalin,MacLeods,2026-07-19,66,416.48
+46,Methotrexate 5ml suspension,Lupin,2026-05-13,117,639.19
+47,Ondansetron,Cipla,2028-02-21,159,1996.92
+48,Pantoprazole 500mg cream,Lupin,2026-11-30,17,1759.75
+49,Escitalopram 10mg cream,Hetero Labs,2028-12-06,2,1339.05
+50,Pseudoephedrine 250mcg capsule,Lupin,2025-12-19,27,1780.53
+51,Cyclosporine,Mankind Pharma,2026-02-28,154,429.15
+52,Alprazolam 250mcg cream,MacLeods,2028-06-24,64,1811.62
+53,Glibenclamide 20mg cream,Sun Pharma,2023-01-15,85,1544.53
+54,Niacin,Aurobindo Pharma,2027-12-15,141,1414.28
+55,Gaviscon 100mg syrup,Wockhardt,2023-05-28,94,1169.19
+56,Vitamin D3,Sun Pharma,2026-06-16,93,1798.97
+57,Metformin,Zydus Cadila,2025-10-19,170,214.56
+58,Metoprolol,Sanofi,2024-09-25,60,1730.57
+59,Diclofenac,Cipla,2025-01-04,188,1849.73
+60,Ramipril,RPG Life Sciences,2025-10-13,68,326.8
+61,Lamotrigine 50mg drop,Torrent Pharma,2025-03-28,117,705.82
+62,Metronidazole 250mcg injection,Novartis,2026-09-06,71,1730.06
+63,Propranolol 250mcg suspension,Galderma,2026-09-18,7,239.53
+64,Cefuroxime 5ml tablet,Glenmark,2027-11-15,88,1459.8
+65,Metoclopramide,MacLeods,2024-04-18,98,1800.01
+66,Prednisolone 125mg suspension,Cipla,2028-10-30,137,1376.85
+67,Tacrolimus,Zydus Cadila,2027-01-31,110,149.25
+68,Gabapentin,Hetero Labs,2026-07-09,169,1697.55
+69,Azathioprine,MacLeods,2026-06-20,170,822.7
+70,Enalapril,Wockhardt,2024-06-05,49,846.69
+71,Aspirin,Aurobindo Pharma,2026-05-17,103,1100.4
+72,Paracetamol 500mg suspension,Alembic,2026-08-12,117,889.15
+73,Topiramate 10mg syrup,Galderma,2023-12-14,72,1035.75
+74,Niacin,Dr. Reddy's,2025-08-20,172,627.73
+75,Hydrocortisone 50mg injection,Emcure,2023-10-26,116,834.74
+76,Fenofibrate,Takeda,2027-04-22,126,805.31
+77,Vitamin D3,Cipla,2024-03-12,199,856.04
+78,Diclofenac,Takeda,2028-10-22,118,109.93
+79,Doxycycline,Glenmark,2028-02-13,34,1604.82
+80,Gabapentin,Wockhardt,2026-07-23,193,1783.94
+81,Vildagliptin,MacLeods,2027-10-14,140,897.37
+82,Iron,Emcure,2028-01-18,66,1506.04
+83,Niacin 2mg drop,Merck,2025-09-06,70,885.35
+84,Methotrexate 5ml gel,Abbott,2023-11-27,35,310.15
+85,Clopidogrel,Takeda,2025-05-26,16,835.59
+86,Lorazepam,Sanofi,2023-09-13,52,1667.45
+87,Clopidogrel,Alembic,2023-03-22,195,1155.62
+88,Mupirocin 10ml cream,Indoco Remedies,2027-05-17,107,1081.06
+89,Tacrolimus,Hetero Labs,2025-06-22,124,446.65
+90,B12 Injection,Novartis,2026-10-08,171,1361.49
+91,Enalapril,Bayer,2024-06-06,159,1072.91
+92,Warfarin,Galderma,2023-04-22,21,1289.07
+93,Vitamin C,Aurobindo Pharma,2023-07-25,66,764.42
+94,Budesonide,Abbott,2027-04-02,71,1506.5
+95,Spironolactone 100mg drop,Cipla,2023-08-02,89,456.2
+96,Losartan,Merck,2023-06-14,193,71.75
+97,Doxycycline 50mg syrup,Torrent Pharma,2024-06-01,121,1342.22
+98,Sodium Bicarbonate,Bayer,2025-11-15,196,744.1
+99,Sitagliptin,RPG Life Sciences,2024-04-14,199,1640.41
+100,Tadalafil 50mg cream,Alembic,2027-03-18,101,1883.53
+101,Hydrocortisone 125mg injection,Glenmark,2026-05-20,175,1204.82
+102,Loratadine,Alembic,2023-06-18,88,1070.16
+103,Pregabalin 2mg gel,Cipla,2027-09-17,125,220.02
+104,Citalopram,Bayer,2024-09-18,111,360.51
+105,Benzoyl Peroxide,Mankind Pharma,2028-06-03,119,876.79
+106,Cyclophosphamide,Abbott,2025-10-02,22,565.07
+107,Cetirizine-D 10mg suspension,Abbott,2023-04-28,126,1703.4
+108,Naproxen,Pfizer,2025-11-24,87,566.52
+109,Linagliptin,Mankind Pharma,2023-02-11,132,1896.64
+110,Simvastatin 20mg drop,Wockhardt,2025-09-11,176,957.43
+111,Methotrexate,Cipla,2024-01-17,75,450.98
+112,Valproate 250mcg gel,Emcure,2028-12-14,88,856.75
+113,Cyclosporine,Pfizer,2028-02-02,69,620.18
+114,Metronidazole 500mg gel,Glenmark,2025-01-28,49,440.61
+115,Mupirocin 1mg cream,Glenmark,2025-03-06,75,462.69
+116,Diclofenac 125mg syrup,Mankind Pharma,2023-07-06,13,1111.18
+117,Lamotrigine,Merck,2028-07-03,26,1746.71
+118,Dextromethorphan 10mg drop,Abbott,2025-01-25,13,512.43
+119,Mupirocin 100mg suspension,Emcure,2023-10-31,147,1262.6
+120,Glibenclamide 1mg cream,Dr. Reddy's,2025-10-13,30,1120.57
+121,Spironolactone,Hetero Labs,2025-07-13,198,1049.92
+122,Cetirizine-D,Biocon,2027-10-23,78,1141.57
+123,Amlodipine,RPG Life Sciences,2024-02-11,195,423.5
+124,Budesonide 100mg syrup,Torrent Pharma,2024-12-12,141,159.38
+125,Paracetamol,Takeda,2028-04-08,73,74.95
+126,Insulin NPH,Takeda,2028-02-03,18,1377.9
+127,Cefuroxime,Merck,2025-03-21,108,238.4
+128,Montelukast,Mankind Pharma,2024-08-05,18,128.68
+129,Tadalafil,Alembic,2026-03-28,112,257.46
+130,Valproate 20mg cream,MacLeods,2028-07-15,112,170.08
+131,Metformin,RPG Life Sciences,2026-08-13,154,508.23
+132,Omeprazole 250mcg tablet,Indoco Remedies,2026-01-08,147,90.06
+133,Ondansetron 2mg drop,Mankind Pharma,2025-01-13,149,877.41
+134,Neomycin,Emcure,2026-11-26,104,673.28
+135,Gabapentin 250mg gel,Sanofi,2028-07-22,73,1328.54
+136,Enalapril,Wockhardt,2023-05-31,116,185.24
+137,Clarithromycin 20mg tablet,Galderma,2028-03-07,105,117.87
+138,Benzoyl Peroxide 10mg drop,Indoco Remedies,2023-07-31,52,541.44
+139,Levocetirizine,Bayer,2028-06-08,31,67.45
+140,Fenofibrate,Torrent Pharma,2024-10-10,79,1106.17
+141,Pseudoephedrine,Torrent Pharma,2024-04-09,118,1894.65
+142,Rivastigmine,Emcure,2026-04-10,130,1413.77
+143,Spironolactone,Emcure,2025-09-25,116,1107.02
+144,Clopidogrel 1mg syrup,Dr. Reddy's,2026-02-05,197,1582.11
+145,Spironolactone 2mg cream,Cipla,2026-03-04,185,604.13
+146,Insulin Glargine,Galderma,2028-06-28,38,898.63
+147,Mupirocin 2mg suspension,Bayer,2026-08-11,48,1961.74
+148,Fluconazole,Torrent Pharma,2027-08-10,11,643.17
+149,Lorazepam,Novartis,2027-05-01,169,1586.86
+150,Donepezil,Emcure,2023-06-01,32,1009.56
+151,Insulin Glargine 100mg drop,Glenmark,2028-11-24,116,40.54
+152,Vitamin D3,Merck,2024-09-24,19,944.29
+153,Cefuroxime 125mg suspension,Merck,2023-11-25,84,1706.16
+154,Erythromycin 10ml drop,Wockhardt,2023-05-28,158,146.16
+155,Fenofibrate,Biocon,2025-07-20,191,189.85
+156,Pantoprazole,Takeda,2024-02-16,113,341.07
+157,Sildenafil,Sun Pharma,2026-08-21,14,593.8
+158,Escitalopram,Torrent Pharma,2028-12-15,105,1136.2
+159,Naproxen 100mg suspension,Hetero Labs,2025-09-13,127,1826.53
+160,Vitamin D3 250mcg cream,Bayer,2025-11-11,170,28.7
+161,Orlistat,Galderma,2024-10-09,18,889.04
+162,Sertraline,Biocon,2027-10-04,176,507.7
+163,Sildenafil 20mg drop,Glenmark,2025-08-29,97,1148.13
+164,Dextromethorphan 125mg cream,Cipla,2027-06-10,70,26.11
+165,Levetiracetam,Sun Pharma,2028-07-27,73,1553.72
+166,Metronidazole,Pfizer,2025-06-16,162,388.36
+167,Clarithromycin,RPG Life Sciences,2024-07-14,160,203.36
+168,Fenofibrate,Biocon,2027-12-11,8,1163.35
+169,Cyclophosphamide 5ml gel,RPG Life Sciences,2027-08-29,44,409.58
+170,Phenylephrine,Pfizer,2028-12-14,128,1827.84
+171,Folic Acid 10mg cream,RPG Life Sciences,2026-10-19,29,941.98
+172,Atorvastatin 500mg suspension,Wockhardt,2027-02-07,23,1583.46
+173,Ibuprofen 100mg drop,Pfizer,2025-12-09,149,768.24
+174,Niacin,Glenmark,2025-08-15,120,59.8
+175,Gaviscon 1mg injection,Merck,2023-09-16,162,1649.47
+176,Lamotrigine 20mg capsule,Lupin,2023-07-05,9,615.69
+177,Bacitracin 500mg syrup,Novartis,2028-02-02,94,1344.27
+178,Cyclosporine,Wockhardt,2027-09-13,150,1487.12
+179,Calcium,Merck,2024-02-10,125,1235.15
+180,Insulin Regular 10ml injection,Bayer,2027-12-27,60,1712.35
+181,Pantoprazole,Pfizer,2027-01-09,15,802.3
+182,Prednisolone,Bayer,2024-01-11,169,432.09
+183,Niacin,Cipla,2023-07-27,85,494.7
+184,Levocetirizine,Zydus Cadila,2023-10-09,195,1112.87
+185,Insulin Glargine 500mg gel,Indoco Remedies,2024-08-27,152,15.64
+186,Vitamin D3,Wockhardt,2025-10-23,44,228.75
+187,Azithromycin 10ml injection,Alembic,2026-08-19,4,356.75
+188,Glibenclamide 20mg capsule,RPG Life Sciences,2023-09-18,121,902.07
+189,Citalopram,Glenmark,2028-01-26,128,450.88
+190,Vildagliptin 250mcg cream,Bayer,2023-05-08,15,1997.19
+191,Enalapril,Glenmark,2028-07-01,182,1820.3
+192,Atorvastatin,Abbott,2024-08-30,16,261.12
+193,Ezetimibe,Wockhardt,2026-08-24,97,1989.31
+194,Salicylic Acid 2mg suspension,Glenmark,2024-04-13,167,1305.32
+195,Propranolol,Zydus Cadila,2027-10-28,115,1777.3
+196,Ramipril 10mg suspension,Sanofi,2024-01-25,80,859.26
+197,Gabapentin 250mg drop,Dr. Reddy's,2024-01-09,21,195.53
+198,Pantoprazole,Pfizer,2024-06-16,142,129.36
+199,Gaviscon,Galderma,2024-05-15,105,713.66
+200,Gabapentin,Sanofi,2023-07-30,73,1204.82
+201,Fluoxetine 2mg injection,Lupin,2028-05-29,57,1696.08
+202,Sertraline,Pfizer,2024-04-15,195,564.35
+203,Montelukast,Wockhardt,2023-04-18,155,1858.88
+204,Valproate 250mg cream,Takeda,2026-06-19,86,708.54
+205,Naproxen,Alembic,2027-06-30,17,292.33
+206,Niacin,Dr. Reddy's,2028-12-12,55,758.63
+207,Loperamide 10ml cream,RPG Life Sciences,2026-08-21,198,1883.4
+208,Linagliptin 50mg syrup,Aurobindo Pharma,2023-07-23,172,172.35
+209,Multivitamin,Emcure,2027-12-16,106,553.6
+210,Ondansetron,Pfizer,2027-10-27,28,573.66
+211,Topiramate,MacLeods,2026-06-17,11,448.83
+212,Linagliptin 500mg cream,Zydus Cadila,2024-07-16,195,518.48
+213,Domperidone 10mg suspension,Aurobindo Pharma,2024-06-13,97,1069.84
+214,Metronidazole,Galderma,2026-12-21,18,800.17
+215,Tacrolimus 50mg drop,Dr. Reddy's,2026-07-06,147,864.28
+216,Enalapril,Sanofi,2026-03-31,29,816.01
+217,Domperidone 1mg drop,Takeda,2027-01-22,22,879.06
+218,Ranitidine 1mg suspension,MacLeods,2023-11-19,101,1742.34
+219,Cyclosporine 10ml syrup,Dr. Reddy's,2028-09-21,162,236.91
+220,Clotrimazole 10ml gel,RPG Life Sciences,2024-08-27,60,214.58
+221,Clarithromycin 1mg syrup,Indoco Remedies,2023-11-05,45,1903.07
+222,Fenofibrate,Indoco Remedies,2028-01-13,174,1849.07
+223,Sodium Bicarbonate,Hetero Labs,2026-08-16,160,639.12
+224,Multivitamin 10mg cream,Mankind Pharma,2023-08-19,90,1019.6
+225,Tadalafil,Sun Pharma,2023-08-22,94,1665.08
+226,Atorvastatin,Dr. Reddy's,2028-09-07,98,930.8
+227,Pseudoephedrine,RPG Life Sciences,2023-06-18,115,1819.01
+228,Dextromethorphan,Abbott,2028-05-02,128,310.21
+229,Amlodipine,Abbott,2023-12-12,129,1295.79
+230,Metformin 10mg drop,MacLeods,2028-11-11,156,325.9
+231,Escitalopram,Novartis,2027-08-02,198,683.35
+232,Linagliptin 250mcg gel,Dr. Reddy's,2026-09-12,24,1120.35
+233,Clopidogrel 125mg syrup,Abbott,2023-11-30,149,1330.59
+234,Sertraline 250mcg suspension,Lupin,2023-12-14,79,1122.25
+235,Rivastigmine,Lupin,2028-11-26,23,1295.59
+236,Furosemide,Cipla,2027-01-25,79,368.72
+237,Budesonide 10mg injection,Torrent Pharma,2024-07-17,39,163.56
+238,Pantoprazole,Wockhardt,2028-11-26,9,1327.24
+239,Propranolol,Hetero Labs,2027-03-24,39,332.87
+240,Valproate,Aurobindo Pharma,2027-11-28,11,827.61
+241,Topiramate,Bayer,2026-03-13,192,1499.59
+242,Cetirizine-D 500mg cream,Emcure,2025-03-05,94,1359.83
+243,Dextromethorphan,Bayer,2026-02-28,199,769.93
+244,Salicylic Acid,Aurobindo Pharma,2025-03-28,154,285.41
+245,Clarithromycin 10mg gel,Wockhardt,2024-02-25,182,1693.33
+246,Loratadine 250mg cream,Bayer,2028-10-03,37,1663.78
+247,Omeprazole,Torrent Pharma,2028-01-22,89,1861.64
+248,Spironolactone 2mg gel,Torrent Pharma,2027-05-01,20,756.08
+249,Azithromycin 100mg gel,Lupin,2024-07-17,9,580.89
+250,Lorazepam,Lupin,2028-04-05,114,1234.54
+251,Simvastatin 500mg syrup,Wockhardt,2028-12-01,108,231.26
+252,Insulin NPH 100mg tablet,Torrent Pharma,2027-09-16,163,1589.86
+253,Loperamide 10mg tablet,Merck,2028-10-11,147,491.46
+254,Vitamin D3 50mg gel,Torrent Pharma,2027-09-03,47,1332.1
+255,Simvastatin,Pfizer,2023-10-05,134,1092.72
+256,Ketoconazole,Novartis,2028-04-09,11,1274.98
+257,Escitalopram 50mg gel,Dr. Reddy's,2026-11-13,61,1468.55
+258,Fenofibrate 1mg gel,Lupin,2023-07-01,90,1096.57
+259,Rivastigmine 250mcg drop,Takeda,2028-05-14,161,372.73
+260,Vitamin C 10mg tablet,Biocon,2025-04-05,11,1584.31
+261,Metformin 5ml suspension,Wockhardt,2028-04-23,64,82.88
+262,Rivastigmine 10ml tablet,Merck,2026-09-21,69,257.71
+263,Escitalopram,Novartis,2027-12-07,98,684.68
+264,Naproxen,Emcure,2027-02-13,132,540.77
+265,Simvastatin,Dr. Reddy's,2027-10-30,154,1990.25
+266,Naproxen,Abbott,2024-02-25,20,662.56
+267,Levothyroxine 1mg suspension,Aurobindo Pharma,2027-12-24,89,899.79
+268,Cyclophosphamide,Pfizer,2027-11-17,70,1282.54
+269,Amlodipine 250mcg suspension,Pfizer,2028-10-02,191,1362.03
+270,Azithromycin 1mg drop,Sun Pharma,2024-06-01,17,479.63
+271,Rivastigmine 20mg tablet,Hetero Labs,2024-09-20,173,905.35
+272,Escitalopram 100mg syrup,MacLeods,2027-02-12,101,635.63
+273,Insulin Regular 100mg tablet,RPG Life Sciences,2025-02-01,127,1040.31
+274,Gaviscon 5ml drop,Zydus Cadila,2026-03-15,177,1833.79
+275,Neomycin 250mg capsule,Bayer,2024-12-08,182,895.77
+276,Omeprazole,Abbott,2026-11-24,181,139.23
+277,Phenylephrine 5ml syrup,Takeda,2024-12-14,92,1022.42
+278,Loratadine,Lupin,2025-08-27,126,62.31
+279,Pseudoephedrine,Bayer,2024-06-15,156,1769.65
+280,Losartan 125mg drop,MacLeods,2027-08-10,196,824.77
+281,Dextromethorphan 10ml capsule,Bayer,2028-03-23,174,1039.55
+282,Levocetirizine,Indoco Remedies,2025-01-15,196,1932.87
+283,B12 Injection,Sun Pharma,2024-05-23,132,314.5
+284,Folic Acid 125mg injection,Pfizer,2028-10-26,72,1693.41
+285,Clarithromycin 2mg cream,Lupin,2026-05-25,157,1071.62
+286,Ketoconazole,Alembic,2024-09-23,43,1320.88
+287,Azathioprine,Abbott,2023-06-18,7,171.63
+288,Rivastigmine,Mankind Pharma,2025-05-13,196,1148.55
+289,Ezetimibe,Emcure,2026-04-01,164,1913.73
+290,Mupirocin 250mcg suspension,Biocon,2028-02-01,18,1380.34
+291,Iron,Emcure,2028-03-17,52,686.98
+292,Vitamin D3 125mg gel,RPG Life Sciences,2026-11-15,102,270.22
+293,Escitalopram,Glenmark,2026-07-31,61,938.28
+294,Ceftriaxone,Lupin,2024-02-01,12,587.52
+295,Clopidogrel,Sanofi,2025-10-13,40,1628.82
+296,Dextromethorphan,Zydus Cadila,2024-10-14,127,1991.98
+297,Orlistat,Biocon,2028-07-30,5,189.2
+298,Warfarin,Torrent Pharma,2025-05-31,149,712.26
+299,Glibenclamide 1mg drop,Biocon,2023-02-03,27,867.55
+300,Cefuroxime,Indoco Remedies,2027-07-10,93,100.03
+301,Glibenclamide,Zydus Cadila,2027-01-24,141,584.32
+302,Clopidogrel,Indoco Remedies,2026-02-19,159,1363.99
+303,Loratadine 100mg suspension,Pfizer,2026-10-20,142,1878.51
+304,Ondansetron 1mg suspension,MacLeods,2023-06-14,11,87.44
+305,Methotrexate 10mg drop,Lupin,2028-10-12,35,662.65
+306,Vildagliptin 20mg cream,Alembic,2026-10-09,129,1658.3
+307,Erythromycin,Alembic,2026-05-12,121,1633.34
+308,Escitalopram 100mg suspension,Alembic,2026-06-14,185,1745.48
+309,Fenofibrate 10mg cream,Merck,2025-07-21,184,112.2
+310,Mupirocin 250mcg suspension,Lupin,2025-09-19,8,1149.41
+311,Lamotrigine 50mg drop,Abbott,2027-09-12,38,831.79
+312,Salbutamol,Indoco Remedies,2028-04-15,188,1457.53
+313,Hydroxychloroquine 500mg gel,Galderma,2028-05-13,134,759.88
+314,Diclofenac,Wockhardt,2026-11-03,139,715.03
+315,Propranolol,Galderma,2025-12-18,156,973.52
+316,Doxycycline 5ml injection,Biocon,2026-03-29,180,422.48
+317,Hydroxychloroquine,Emcure,2026-11-29,143,1868.06
+318,Azathioprine 100mg suspension,Novartis,2026-11-14,197,1611.19
+319,Levothyroxine 125mg capsule,Pfizer,2027-12-17,167,520.32
+320,Mupirocin 2mg cream,Wockhardt,2026-01-17,35,227.36
+321,Tacrolimus,Torrent Pharma,2023-07-27,171,1811.32
+322,Montelukast,Sun Pharma,2024-02-15,105,667.28
+323,Lorazepam 250mg tablet,Wockhardt,2024-10-08,104,1309.26
+324,Lorazepam,Zydus Cadila,2026-03-22,82,577.98
+325,Amlodipine,Dr. Reddy's,2025-08-09,136,1479.99
+326,Cefixime,Aurobindo Pharma,2027-09-08,45,1868.51
+327,Cefixime,Novartis,2028-07-22,47,1873.85
+328,Levothyroxine,Cipla,2026-05-07,145,1209.54
+329,Lorazepam 250mcg drop,Lupin,2028-08-27,119,552.95
+330,Cetirizine 125mg drop,Merck,2025-11-19,183,380.54
+331,Tacrolimus 5ml injection,Aurobindo Pharma,2027-07-19,109,1035.41
+332,Omeprazole,Glenmark,2025-01-26,35,960.13
+333,Doxycycline 20mg injection,Bayer,2025-12-29,84,610.87
+334,Azathioprine,Mankind Pharma,2027-01-12,177,480.24
+335,Gabapentin 5ml syrup,Novartis,2028-08-20,180,1541.98
+336,Valproate 5ml gel,Hetero Labs,2025-06-23,56,1915.15
+337,Mupirocin 125mg gel,Sanofi,2028-04-12,193,1079.66
+338,Gabapentin,Indoco Remedies,2025-10-10,174,1511.93
+339,Simvastatin,MacLeods,2027-01-21,19,1835.32
+340,Cetirizine 2mg injection,Alembic,2024-09-05,42,662.95
+341,Benzoyl Peroxide,Galderma,2025-04-21,183,1170.46
+342,Omeprazole,Bayer,2023-08-16,116,272.57
+343,Spironolactone,Sun Pharma,2028-03-08,172,1615.76
+344,Azathioprine 5ml tablet,RPG Life Sciences,2025-06-11,148,155.33
+345,Furosemide 100mg tablet,Dr. Reddy's,2028-04-17,8,581.31
+346,Naproxen,Indoco Remedies,2027-09-18,95,1985.78
+347,Aspirin,Novartis,2027-03-19,20,1368.63
+348,Pregabalin,Lupin,2026-11-25,30,365.16
+349,Erythromycin 250mg injection,Cipla,2023-04-04,76,931.38
+350,Azathioprine,Wockhardt,2027-04-03,58,502.55
+351,Sertraline 500mg capsule,Sun Pharma,2027-09-14,157,1534.45
+352,Amoxicillin 100mg capsule,Hetero Labs,2023-05-18,114,1199.59
+353,Hydroxychloroquine,Torrent Pharma,2023-07-01,102,883.54
+354,Phenylephrine 50mg syrup,MacLeods,2026-03-30,59,1633.41
+355,Cyclophosphamide,Alembic,2026-08-06,60,610.51
+356,Vitamin D3,MacLeods,2025-06-24,105,608.0
+357,Amlodipine,Alembic,2024-12-18,160,1360.71
+358,Gaviscon,Pfizer,2027-04-11,134,644.28
+359,Spironolactone,Biocon,2027-03-22,47,1511.29
+360,Lorazepam 500mg cream,Takeda,2024-08-14,118,1830.33
+361,Gaviscon,Sanofi,2028-12-10,34,782.95
+362,Clarithromycin 250mcg capsule,Bayer,2027-02-28,23,1075.91
+363,Prednisolone 20mg tablet,Dr. Reddy's,2025-02-09,194,1179.29
+364,Gabapentin,Emcure,2025-05-05,85,613.34
+365,Ibuprofen 500mg capsule,RPG Life Sciences,2028-05-15,62,1394.3
+366,Hydroxychloroquine 500mg gel,Indoco Remedies,2026-03-05,97,937.84
+367,Donepezil 5ml gel,MacLeods,2028-07-29,119,206.23
+368,Azathioprine,Abbott,2025-04-12,94,632.71
+369,Metformin,Torrent Pharma,2024-08-20,4,528.94
+370,Oxymetazoline,Sanofi,2026-04-24,39,400.42
+371,Metronidazole 500mg drop,Wockhardt,2026-10-14,65,1529.09
+372,Neomycin,Merck,2028-07-02,117,344.78
+373,Fluoxetine 125mg drop,Aurobindo Pharma,2023-08-29,134,77.31
+374,Atorvastatin,Galderma,2023-07-18,195,22.7
+375,Vitamin C,Torrent Pharma,2023-10-06,181,310.55
+376,Budesonide,Pfizer,2023-09-05,158,1279.08
+377,Vildagliptin,Galderma,2028-06-21,4,23.16
+378,Pseudoephedrine,Cipla,2028-12-08,184,556.73
+379,Insulin NPH 125mg suspension,Aurobindo Pharma,2024-03-14,24,1053.53
+380,Fluconazole 2mg cream,Pfizer,2025-12-30,101,167.25
+381,Enalapril,Torrent Pharma,2025-07-14,76,1371.24
+382,Simvastatin,Merck,2023-05-10,23,816.5
+383,Aspirin,Sun Pharma,2023-02-08,179,351.05
+384,Bacitracin,Merck,2026-09-18,144,1954.89
+385,Pantoprazole,Sun Pharma,2025-07-30,54,1803.53
+386,Valproate,Emcure,2026-01-15,11,1849.08
+387,Levetiracetam,Wockhardt,2023-05-15,45,1858.25
+388,Metoclopramide 500mg syrup,Indoco Remedies,2027-06-20,19,605.56
+389,Sodium Bicarbonate 20mg gel,Novartis,2024-07-27,176,1451.09
+390,Ketoconazole,Pfizer,2023-08-08,25,879.81
+391,Atorvastatin 1mg suspension,Indoco Remedies,2026-08-29,7,1271.9
+392,Cetirizine-D,Pfizer,2027-03-18,110,379.62
+393,Oxymetazoline,Dr. Reddy's,2026-04-24,63,1429.09
+394,Simvastatin 20mg syrup,RPG Life Sciences,2027-05-15,81,727.79
+395,Omeprazole 5ml drop,Pfizer,2026-01-09,26,273.69
+396,Naproxen,Wockhardt,2028-09-29,104,215.55
+397,Omeprazole 100mg gel,Novartis,2023-02-20,74,833.48
+398,Metoprolol 2mg injection,Alembic,2028-11-04,43,1373.78
+399,Folic Acid 5ml cream,Emcure,2024-08-20,16,342.74
+400,Insulin Regular,Emcure,2023-11-12,92,510.88
+401,Doxycycline,Emcure,2025-03-11,117,222.88
+402,Sildenafil 20mg gel,Hetero Labs,2027-04-06,84,886.04
+403,B12 Injection,Merck,2024-07-11,76,648.12
+404,Valproate 10ml syrup,Novartis,2026-07-31,74,1472.4
+405,Niacin,Alembic,2025-09-19,83,758.35
+406,Warfarin 1mg injection,Alembic,2025-01-06,174,1537.56
+407,Azithromycin,Bayer,2025-05-08,112,1597.39
+408,Valproate 20mg drop,Lupin,2026-05-25,61,512.84
+409,Calcium,Novartis,2023-10-30,114,1981.49
+410,Mupirocin,Wockhardt,2028-09-06,177,842.42
+411,Cefixime,Pfizer,2023-12-15,27,1540.22
+412,Pregabalin,Aurobindo Pharma,2023-07-01,144,1967.38
+413,Topiramate,Indoco Remedies,2026-09-20,110,220.83
+414,Pantoprazole 2mg injection,Bayer,2027-03-13,100,931.5
+415,Topiramate,MacLeods,2024-09-09,88,1995.43
+416,Mupirocin 20mg capsule,Glenmark,2024-08-03,89,630.66
+417,Loperamide,MacLeods,2028-06-01,89,957.56
+418,Multivitamin,Bayer,2026-07-30,17,607.53
+419,Hydroxychloroquine 10ml capsule,Galderma,2024-11-04,189,495.39
+420,Diclofenac,Abbott,2027-10-13,118,471.39
+421,Enalapril,Aurobindo Pharma,2027-11-06,101,68.09
+422,Vildagliptin,Bayer,2027-10-26,99,18.86
+423,Budesonide 125mg capsule,Alembic,2024-02-21,137,382.05
+424,Domperidone 100mg cream,Galderma,2028-06-27,135,1932.17
+425,Metoclopramide,Hetero Labs,2027-05-27,150,237.32
+426,Fluoxetine,Hetero Labs,2024-12-07,172,1414.92
+427,Sildenafil,Alembic,2023-12-14,172,276.56
+428,Loratadine 100mg syrup,Pfizer,2024-08-02,130,783.04
+429,Linagliptin 20mg suspension,Aurobindo Pharma,2028-06-16,162,1079.38
+430,Rivastigmine,Aurobindo Pharma,2024-11-14,125,584.78
+431,Naproxen 10mg tablet,Pfizer,2023-02-09,124,281.7
+432,Clopidogrel,MacLeods,2028-07-20,104,1372.55
+433,Spironolactone,Bayer,2028-06-24,42,174.51
+434,Azithromycin,Torrent Pharma,2026-04-11,8,556.96
+435,Erythromycin 10mg drop,Wockhardt,2028-09-23,28,1149.7
+436,Ceftriaxone,Pfizer,2023-06-20,194,1440.77
+437,Phenylephrine 20mg capsule,RPG Life Sciences,2025-10-10,76,1750.87
+438,Cefixime,Pfizer,2023-12-23,112,1731.93
+439,Loratadine,Torrent Pharma,2025-05-09,188,1179.97
+440,Sertraline,Hetero Labs,2027-10-20,42,1236.14
+441,Salbutamol,Sun Pharma,2026-12-07,136,569.36
+442,Erythromycin 125mg cream,Biocon,2025-12-31,131,1971.12
+443,Topiramate,Lupin,2027-08-13,15,1985.05
+444,Donepezil 250mg injection,Lupin,2026-08-12,63,1525.33
+445,Topiramate 250mg cream,Merck,2027-08-24,96,909.46
+446,Niacin,Indoco Remedies,2024-01-17,103,1036.07
+447,Insulin Regular,Pfizer,2028-02-06,124,661.31
+448,Paracetamol,RPG Life Sciences,2024-01-17,187,1944.58
+449,Niacin,Pfizer,2023-09-17,136,801.45
+450,Furosemide,Emcure,2026-01-04,82,1658.4
+451,Alprazolam,Lupin,2028-06-10,87,1789.37
+452,Promethazine 100mg drop,Cipla,2024-05-23,40,888.16
+453,Paracetamol,Sanofi,2025-04-08,176,1819.72
+454,Donepezil 5ml capsule,Merck,2027-01-16,64,174.02
+455,Gabapentin,Aurobindo Pharma,2023-08-01,101,1254.95
+456,Azathioprine,Torrent Pharma,2027-10-25,167,191.49
+457,Pantoprazole 10mg capsule,Lupin,2025-07-15,132,1363.17
+458,Ibuprofen 10ml capsule,Sanofi,2024-06-25,122,150.95
+459,Clopidogrel 100mg capsule,Abbott,2027-02-14,76,282.89
+460,Metoprolol,Lupin,2024-08-08,17,1065.71
+461,Ibuprofen,Aurobindo Pharma,2027-12-08,89,1447.64
+462,Fenofibrate,Sanofi,2027-12-18,55,182.51
+463,Pantoprazole 100mg suspension,Pfizer,2027-10-25,80,1584.24
+464,Doxycycline 100mg injection,Wockhardt,2026-03-13,199,1883.15
+465,Azithromycin,Galderma,2026-05-20,52,1040.32
+466,Clotrimazole 20mg cream,Merck,2023-08-12,200,1796.85
+467,Fluconazole,Glenmark,2025-09-14,127,1279.78
+468,Atorvastatin,Cipla,2027-01-19,81,272.65
+469,Sodium Bicarbonate,Wockhardt,2024-12-08,195,947.32
+470,Propranolol 1mg capsule,Cipla,2025-12-09,55,89.26
+471,Amlodipine,Novartis,2028-09-06,73,1260.86
+472,Ketoconazole,Sanofi,2027-07-06,21,1284.67
+473,Erythromycin,Mankind Pharma,2023-12-09,79,167.25
+474,Salbutamol,Lupin,2026-08-31,100,1177.01
+475,Promethazine,Galderma,2023-09-28,79,1400.37
+476,Cyclophosphamide,Torrent Pharma,2023-08-26,62,181.56
+477,B12 Injection 1mg tablet,Biocon,2024-12-20,30,35.2
+478,Vitamin C,Aurobindo Pharma,2028-07-26,88,1050.78
+479,Azathioprine 10ml syrup,RPG Life Sciences,2026-01-05,187,1773.97
+480,Propranolol,Abbott,2027-10-25,69,1052.47
+481,Cefuroxime,Alembic,2023-11-12,127,915.84
+482,Citalopram 1mg syrup,Pfizer,2024-10-06,65,1548.92
+483,Dextromethorphan,Glenmark,2025-07-24,189,1022.56
+484,Metformin,Cipla,2025-09-28,11,948.81
+485,Clopidogrel,Aurobindo Pharma,2023-05-25,141,1608.2
+486,Methotrexate,Sanofi,2025-07-08,82,504.04
+487,Azathioprine 100mg gel,Glenmark,2028-08-18,172,1804.86
+488,Diclofenac 2mg tablet,Novartis,2023-10-10,119,1733.4
+489,Metoprolol,Abbott,2023-12-20,141,918.92
+490,Escitalopram 1mg cream,RPG Life Sciences,2025-09-20,118,742.86
+491,Bacitracin,Indoco Remedies,2025-03-11,187,1801.88
+492,Promethazine,Lupin,2023-01-27,104,57.58
+493,Phenylephrine 125mg tablet,Abbott,2023-01-06,194,1318.03
+494,Tacrolimus,Glenmark,2025-04-20,135,1966.4
+495,Spironolactone,Sun Pharma,2024-08-06,182,566.85
+496,Metformin,MacLeods,2027-08-19,179,1792.2
+497,Loperamide,Dr. Reddy's,2024-01-27,129,275.69
+498,Warfarin 1mg tablet,Sanofi,2024-06-19,60,590.44
+499,Metoclopramide,Novartis,2026-08-29,81,910.99
+500,Metronidazole 500mg syrup,Indoco Remedies,2024-03-22,39,220.26
+501,Cetirizine-D,Sanofi,2024-05-09,137,722.99
+502,Propranolol 5ml drop,Mankind Pharma,2024-05-06,23,323.65
+503,Levetiracetam 125mg tablet,Zydus Cadila,2026-09-04,37,191.51
+504,Doxycycline,Novartis,2028-10-04,12,1357.59
+505,Cefuroxime,Aurobindo Pharma,2023-05-08,103,1710.66
+506,Gaviscon,Torrent Pharma,2024-01-23,118,212.8
+507,Vitamin C 50mg injection,Lupin,2025-03-22,102,750.76
+508,Fenofibrate,Dr. Reddy's,2025-11-26,19,53.38
+509,Losartan 250mcg drop,Lupin,2024-01-12,84,253.83
+510,Orlistat 1mg suspension,RPG Life Sciences,2027-06-06,127,68.67
+511,Levetiracetam,Pfizer,2025-05-29,47,557.21
+512,Cetirizine-D,Sun Pharma,2025-10-03,165,597.26
+513,Ramipril,Emcure,2023-09-07,22,566.75
+514,Vitamin C,Merck,2028-11-23,63,1265.2
+515,Phenylephrine,Novartis,2027-01-10,122,1093.59
+516,Neomycin 1mg gel,Novartis,2026-01-12,46,61.87
+517,Linagliptin 5ml tablet,Emcure,2028-12-08,91,1536.02
+518,Metronidazole,Glenmark,2025-10-12,168,489.89
+519,Erythromycin,RPG Life Sciences,2023-08-18,195,1992.82
+520,Montelukast,Novartis,2026-12-24,44,360.44
+521,Insulin Glargine 125mg gel,Alembic,2023-04-26,180,1404.12
+522,Sodium Bicarbonate,Alembic,2025-02-10,126,1088.83
+523,Diclofenac,Dr. Reddy's,2023-08-19,59,1207.31
+524,Amoxicillin,Cipla,2026-09-20,157,410.91
+525,Levocetirizine 250mg gel,Sun Pharma,2023-03-31,37,1177.35
+526,Vitamin D3,MacLeods,2027-02-03,18,753.45
+527,Pregabalin 100mg gel,Biocon,2026-08-14,34,1951.96
+528,Cyclophosphamide,Merck,2028-06-18,166,641.39
+529,Hydroxychloroquine,Takeda,2027-01-01,57,1334.41
+530,Diclofenac 125mg cream,Lupin,2024-12-28,186,13.58
+531,Lamotrigine,Novartis,2023-05-13,46,1208.75
+532,Vildagliptin 1mg capsule,Emcure,2024-07-30,84,1493.23
+533,Fluconazole 10ml syrup,Merck,2023-12-30,181,1343.35
+534,Cyclophosphamide,Bayer,2023-02-16,67,427.27
+535,Valproate 5ml capsule,RPG Life Sciences,2023-01-06,12,778.01
+536,Cyclophosphamide,Aurobindo Pharma,2027-08-23,126,1764.72
+537,Sertraline,Glenmark,2028-05-17,147,1305.43
+538,Levetiracetam 10mg capsule,Sun Pharma,2026-04-22,5,644.25
+539,Ranitidine 250mg suspension,Aurobindo Pharma,2023-11-04,140,1884.25
+540,Omeprazole 1mg drop,Takeda,2023-05-07,110,1885.46
+541,Folic Acid,Sanofi,2024-10-05,13,211.5
+542,Salbutamol,Sanofi,2025-12-22,169,570.23
+543,Fluconazole 20mg drop,Lupin,2023-08-12,92,17.59
+544,Omeprazole 250mcg drop,Zydus Cadila,2024-02-02,6,421.84
+545,Niacin 100mg drop,Glenmark,2026-06-17,200,800.96
+546,Neomycin,Mankind Pharma,2024-01-09,164,1092.81
+547,Naproxen 20mg gel,Aurobindo Pharma,2027-12-31,11,533.96
+548,Orlistat 5ml tablet,Lupin,2024-02-01,21,1339.6
+549,Phenylephrine,Indoco Remedies,2025-07-20,141,131.36
+550,Clopidogrel,Sanofi,2028-04-28,146,1764.49
+551,Lorazepam 20mg tablet,MacLeods,2028-10-17,146,1358.29
+552,Ezetimibe 10mg syrup,Aurobindo Pharma,2025-05-17,49,261.11
+553,Furosemide 250mcg suspension,Zydus Cadila,2024-08-28,152,523.19
+554,Cyclophosphamide,Dr. Reddy's,2023-12-23,99,1117.16
+555,Pseudoephedrine 5ml drop,Cipla,2028-11-10,200,844.99
+556,Spironolactone 1mg capsule,Glenmark,2024-02-18,73,1736.28
+557,Sertraline,Mankind Pharma,2027-04-18,167,976.31
+558,Sitagliptin,Aurobindo Pharma,2026-02-02,103,296.27
+559,Sitagliptin,Novartis,2023-06-08,101,1780.25
+560,Lorazepam,Sun Pharma,2028-04-30,68,1795.09
+561,Amoxicillin 5ml cream,Mankind Pharma,2028-07-06,178,1372.86
+562,Metronidazole 125mg drop,Indoco Remedies,2026-08-07,68,1460.31
+563,Sitagliptin,Zydus Cadila,2027-12-15,54,1827.73
+564,Ramipril,Indoco Remedies,2028-10-16,95,1643.82
+565,Clotrimazole,Dr. Reddy's,2026-06-28,181,1018.52
+566,Vitamin C,MacLeods,2023-04-29,44,393.6
+567,Hydrocortisone,Torrent Pharma,2023-05-16,116,110.61
+568,Citalopram,Mankind Pharma,2027-02-17,118,1015.2
+569,Niacin,Galderma,2023-05-06,61,751.21
+570,Linagliptin,Emcure,2026-12-03,88,335.39
+571,Cefuroxime,Takeda,2024-01-06,72,64.63
+572,Glibenclamide 1mg injection,Torrent Pharma,2025-07-11,173,421.39
+573,Donepezil,Cipla,2023-02-06,121,1823.92
+574,Rivastigmine 50mg injection,Mankind Pharma,2026-06-05,182,1934.38
+575,Rivastigmine 20mg gel,Bayer,2025-10-29,55,938.73
+576,Topiramate,Hetero Labs,2027-06-15,149,213.6
+577,Clotrimazole,Pfizer,2026-03-03,76,1371.98
+578,Mupirocin 5ml gel,Mankind Pharma,2025-12-05,167,1425.08
+579,Donepezil 250mg injection,Sun Pharma,2027-07-14,169,645.98
+580,Vitamin C,Merck,2028-07-30,75,526.26
+581,Spironolactone,RPG Life Sciences,2023-05-25,149,1419.06
+582,Dextromethorphan,Abbott,2025-06-29,175,1073.92
+583,Lorazepam,Galderma,2027-01-08,129,607.39
+584,Folic Acid,Wockhardt,2025-01-11,75,204.23
+585,Levocetirizine,RPG Life Sciences,2025-01-19,174,1800.19
+586,Donepezil 10ml injection,RPG Life Sciences,2026-06-11,107,1578.3
+587,Lorazepam 1mg cream,Bayer,2024-04-27,120,116.82
+588,Niacin,Hetero Labs,2023-10-19,120,1779.96
+589,Ketoconazole 250mcg suspension,MacLeods,2026-05-07,105,117.58
+590,Calcium 500mg gel,Sanofi,2028-02-18,36,639.6
+591,Methotrexate 100mg drop,Abbott,2024-12-25,80,1272.65
+592,Paracetamol,Zydus Cadila,2024-11-21,147,1531.32
+593,Neomycin,Indoco Remedies,2023-12-27,33,1232.81
+594,Niacin,Sanofi,2028-05-09,98,19.29
+595,Erythromycin 10ml tablet,Abbott,2028-12-15,48,45.65
+596,Paracetamol,Torrent Pharma,2025-07-15,177,1755.2
+597,Tadalafil 20mg cream,Aurobindo Pharma,2023-09-25,11,603.42
+598,Levothyroxine,MacLeods,2028-11-16,86,872.99
+599,Levetiracetam,Abbott,2028-06-30,91,1502.73
+600,Folic Acid,Novartis,2023-03-20,58,456.4
+601,Levocetirizine 50mg syrup,Glenmark,2027-02-10,182,1304.58
+602,Cefixime 250mcg cream,Indoco Remedies,2028-12-30,159,106.69
+603,Glibenclamide,Merck,2023-03-22,12,1382.6
+604,Spironolactone,Glenmark,2025-11-01,121,1406.72
+605,Salbutamol,Merck,2023-02-08,77,847.53
+606,Pantoprazole,Mankind Pharma,2024-07-15,107,1663.0
+607,Ranitidine,Hetero Labs,2024-04-27,72,236.88
+608,Ranitidine,Hetero Labs,2025-03-29,199,533.36
+609,Benzoyl Peroxide,Pfizer,2027-08-06,75,329.14
+610,Pseudoephedrine,Zydus Cadila,2028-05-22,84,476.67
+611,Ibuprofen,Glenmark,2028-07-16,38,1899.4
+612,Metoprolol,RPG Life Sciences,2024-02-19,65,1292.23
+613,Loperamide,Biocon,2025-12-17,118,109.66
+614,Diclofenac,Biocon,2027-01-15,173,632.29
+615,Tacrolimus 50mg tablet,Lupin,2024-11-29,84,721.48
+616,Multivitamin,Mankind Pharma,2024-01-16,95,1631.78
+617,Naproxen 20mg drop,Mankind Pharma,2027-04-29,176,1702.84
+618,Spironolactone,Aurobindo Pharma,2024-04-08,33,1395.38
+619,Amlodipine,Aurobindo Pharma,2024-02-29,106,1823.34
+620,Mupirocin,Galderma,2027-11-30,46,1226.53
+621,Metoprolol 50mg syrup,Emcure,2028-06-22,28,1776.31
+622,Multivitamin 5ml gel,Cipla,2028-11-19,196,1489.81
+623,Azathioprine,Galderma,2026-10-17,132,1050.98
+624,Lamotrigine,Sanofi,2025-10-15,123,698.04
+625,Topiramate,Lupin,2023-08-12,2,1290.36
+626,Iron,Emcure,2028-07-23,42,158.98
+627,Neomycin 10ml cream,Sun Pharma,2028-09-07,57,1105.49
+628,Aspirin,Torrent Pharma,2023-11-19,117,893.94
+629,Dextromethorphan,Emcure,2028-01-06,80,246.23
+630,Bacitracin,Cipla,2024-02-25,103,830.55
+631,Gaviscon,Dr. Reddy's,2026-06-01,130,1129.04
+632,Donepezil,Abbott,2027-01-28,13,1635.01
+633,Loperamide 1mg drop,Takeda,2027-01-28,183,910.54
+634,Pantoprazole,Torrent Pharma,2023-01-09,87,716.73
+635,Niacin,Biocon,2028-11-08,95,1407.17
+636,Metformin,Emcure,2024-07-29,183,1487.6
+637,Ramipril 1mg injection,Zydus Cadila,2024-05-09,100,439.02
+638,Prednisolone,Glenmark,2027-08-25,11,1853.99
+639,Topiramate,Indoco Remedies,2028-01-20,117,1320.33
+640,Ketoconazole 10mg tablet,MacLeods,2023-07-18,141,1871.26
+641,Oxymetazoline,MacLeods,2024-12-26,177,1161.32
+642,Cyclophosphamide,Glenmark,2027-05-06,168,1205.09
+643,Domperidone,Novartis,2027-09-11,155,1832.66
+644,Promethazine 20mg gel,Biocon,2028-01-29,34,284.98
+645,Sitagliptin,RPG Life Sciences,2028-09-29,76,1687.72
+646,Pseudoephedrine,Takeda,2025-06-09,51,427.33
+647,Methotrexate 10ml syrup,Takeda,2024-12-29,128,1089.56
+648,Niacin 100mg gel,Wockhardt,2028-05-21,149,1145.57
+649,Gabapentin,Galderma,2028-12-26,73,1756.18
+650,Furosemide,MacLeods,2024-03-12,6,767.93
+651,Glibenclamide,Zydus Cadila,2025-12-29,192,1573.21
+652,Insulin NPH,Lupin,2023-09-12,176,1570.87
+653,Salbutamol,Sun Pharma,2027-01-09,115,213.94
+654,Topiramate,Torrent Pharma,2027-05-12,60,1026.74
+655,Lamotrigine 250mcg tablet,Novartis,2027-05-07,106,1913.84
+656,Levetiracetam 2mg tablet,Cipla,2025-10-26,51,1244.92
+657,Metoprolol,Bayer,2025-07-12,162,1412.21
+658,Rivastigmine 1mg injection,Indoco Remedies,2025-03-03,75,903.14
+659,Levetiracetam 250mg capsule,Novartis,2023-06-16,109,565.43
+660,Cefuroxime 1mg cream,Cipla,2026-09-15,119,1422.28
+661,Calcium 10ml tablet,Indoco Remedies,2026-05-18,125,1581.92
+662,Pseudoephedrine 125mg gel,MacLeods,2025-06-19,47,1046.01
+663,Ketoconazole 2mg suspension,Dr. Reddy's,2026-12-02,56,1767.96
+664,Pregabalin 10ml cream,Zydus Cadila,2028-12-12,121,1993.3
+665,Ondansetron,Cipla,2024-04-14,171,698.55
+666,Fluconazole,Hetero Labs,2025-09-25,10,1368.28
+667,Domperidone 100mg suspension,Mankind Pharma,2026-03-04,6,1823.56
+668,Propranolol 2mg drop,Emcure,2023-06-29,75,1797.58
+669,Prednisolone 100mg capsule,Aurobindo Pharma,2028-12-24,1,1257.6
+670,Salbutamol,Indoco Remedies,2025-05-23,175,854.18
+671,Ranitidine 125mg suspension,Merck,2023-10-23,191,1375.23
+672,Azithromycin,Abbott,2023-06-05,22,155.76
+673,Diclofenac,Wockhardt,2023-10-16,147,1645.02
+674,Cefuroxime,Bayer,2027-07-15,110,639.64
+675,Clopidogrel,Wockhardt,2023-01-25,164,1443.37
+676,Losartan,Alembic,2023-07-06,179,1698.02
+677,Fluoxetine,Glenmark,2026-04-02,175,609.69
+678,Omeprazole 10mg suspension,Novartis,2023-05-07,121,321.08
+679,Montelukast 20mg cream,Merck,2024-08-13,76,1357.81
+680,Cyclophosphamide,Cipla,2024-08-02,31,93.13
+681,Dextromethorphan,Wockhardt,2023-12-15,78,428.01
+682,Tacrolimus,Pfizer,2025-05-17,105,1812.2
+683,Clotrimazole 250mg injection,Hetero Labs,2025-11-01,49,238.1
+684,Gabapentin,Sun Pharma,2028-03-04,165,1103.83
+685,Levothyroxine,Mankind Pharma,2024-02-07,50,1453.92
+686,Neomycin,Pfizer,2024-06-09,171,1314.39
+687,Pantoprazole 100mg injection,Abbott,2028-06-13,115,663.41
+688,Pregabalin 1mg syrup,Alembic,2027-02-01,80,1917.73
+689,Folic Acid 500mg injection,Takeda,2027-11-22,70,1681.82
+690,Vitamin C,Abbott,2028-05-19,118,896.26
+691,Metoprolol 2mg capsule,Aurobindo Pharma,2023-12-02,71,1718.84
+692,Vitamin C,Zydus Cadila,2025-12-14,187,1773.81
+693,Atorvastatin,Cipla,2028-09-08,161,72.08
+694,Oxymetazoline,Indoco Remedies,2025-05-21,9,1107.67
+695,Phenylephrine,Wockhardt,2028-04-17,167,1552.64
+696,Citalopram 1mg cream,Lupin,2028-03-18,128,1025.72
+697,Warfarin 50mg injection,Hetero Labs,2024-11-10,193,1033.13
+698,Cetirizine-D 1mg syrup,RPG Life Sciences,2028-06-03,91,90.44
+699,Promethazine,Dr. Reddy's,2025-12-18,94,475.7
+700,Gabapentin 10ml suspension,Emcure,2028-02-06,11,89.41
+701,Donepezil 125mg cream,RPG Life Sciences,2025-12-14,148,1093.26
+702,Diclofenac 20mg gel,Alembic,2023-11-15,132,510.66
+703,Montelukast,Pfizer,2026-11-14,124,1587.39
+704,Sitagliptin 250mg drop,Aurobindo Pharma,2025-07-31,19,1033.94
+705,Insulin Regular 250mg syrup,Pfizer,2024-04-29,169,468.39
+706,Lorazepam,Emcure,2028-05-15,122,429.3
+707,Iron,Sanofi,2023-04-02,62,95.86
+708,Dextromethorphan,Lupin,2028-09-30,10,1782.69
+709,Vitamin D3 5ml syrup,MacLeods,2027-07-19,153,1938.79
+710,Niacin 125mg cream,Dr. Reddy's,2025-06-06,114,1216.99
+711,Lorazepam,Aurobindo Pharma,2025-06-17,105,1205.67
+712,Oxymetazoline,Aurobindo Pharma,2028-09-23,67,343.77
+713,Levetiracetam 10mg capsule,Torrent Pharma,2027-03-30,98,273.1
+714,Amoxicillin 2mg suspension,Lupin,2024-01-30,45,956.98
+715,Vildagliptin,Wockhardt,2028-08-23,192,243.86
+716,Mupirocin,Hetero Labs,2023-01-05,198,1360.33
+717,B12 Injection,Pfizer,2023-06-27,178,1064.33
+718,Metronidazole,Emcure,2027-04-11,89,1182.21
+719,Tacrolimus,Takeda,2024-02-05,108,276.43
+720,Mupirocin,Dr. Reddy's,2026-03-06,153,1754.76
+721,Ramipril 50mg tablet,Alembic,2028-11-10,30,1044.33
+722,Aspirin,Takeda,2026-07-17,104,730.92
+723,Calcium,Alembic,2025-11-04,66,1711.4
+724,Furosemide,Hetero Labs,2026-02-02,174,800.93
+725,Salbutamol,Wockhardt,2028-05-30,45,746.72
+726,Gaviscon,Biocon,2026-11-11,198,1413.93
+727,Tacrolimus 250mcg capsule,RPG Life Sciences,2025-07-30,114,1568.39
+728,Iron 2mg suspension,Abbott,2023-08-02,41,784.32
+729,Niacin 100mg syrup,Emcure,2027-11-19,22,137.52
+730,Montelukast 1mg tablet,RPG Life Sciences,2027-04-24,102,1231.79
+731,Benzoyl Peroxide 1mg tablet,Indoco Remedies,2024-12-18,163,993.79
+732,Ibuprofen 250mcg cream,Zydus Cadila,2023-05-18,200,1203.03
+733,Benzoyl Peroxide,Hetero Labs,2024-11-25,172,81.76
+734,Fluconazole,Aurobindo Pharma,2023-12-22,70,1561.55
+735,Fluoxetine,Novartis,2025-03-31,132,40.58
+736,Hydroxychloroquine 100mg cream,RPG Life Sciences,2026-11-26,88,1926.94
+737,Insulin Regular 500mg drop,Novartis,2023-01-20,66,358.32
+738,Ketoconazole 100mg cream,Abbott,2024-04-24,131,1913.85
+739,Erythromycin,Alembic,2025-10-21,177,891.11
+740,Aspirin,Indoco Remedies,2025-09-23,193,685.92
+741,Metoprolol,Bayer,2023-04-23,123,241.37
+742,Losartan 500mg injection,Abbott,2027-08-17,90,1037.84
+743,Ibuprofen,Mankind Pharma,2025-10-13,73,195.09
+744,Topiramate,Abbott,2023-11-08,141,1863.48
+745,Lorazepam 500mg cream,Aurobindo Pharma,2025-02-17,127,1476.85
+746,Fluconazole,Mankind Pharma,2025-04-26,58,413.51
+747,Doxycycline,Pfizer,2024-09-30,199,222.31
+748,Simvastatin,Galderma,2028-07-10,157,23.18
+749,Phenylephrine,Emcure,2027-03-01,158,637.68
+750,Dextromethorphan,Emcure,2025-01-19,195,1832.85
+751,Insulin Regular 1mg syrup,Sun Pharma,2028-11-23,108,961.86
+752,Phenylephrine 10ml suspension,Galderma,2024-12-16,117,1953.25
+753,Lamotrigine,Abbott,2023-02-04,3,1351.47
+754,Aspirin,Abbott,2027-01-21,156,1725.07
+755,Naproxen,Torrent Pharma,2026-01-08,120,1917.47
+756,Alprazolam 10mg suspension,Zydus Cadila,2027-09-13,179,1506.87
+757,Citalopram,Mankind Pharma,2028-01-21,46,1147.11
+758,Dextromethorphan,Glenmark,2026-01-10,60,1115.13
+759,Aspirin 125mg syrup,Emcure,2023-02-09,45,848.83
+760,Vitamin C,Merck,2028-10-18,136,1443.92
+761,Neomycin 2mg tablet,Novartis,2024-02-10,176,335.05
+762,Budesonide,Emcure,2024-01-30,115,1491.74
+763,Cefuroxime 2mg cream,Pfizer,2023-03-23,105,251.26
+764,Topiramate,Zydus Cadila,2024-12-15,199,576.37
+765,Domperidone,Emcure,2028-01-05,20,768.33
+766,Insulin NPH,Lupin,2024-11-17,163,1617.36
+767,Alprazolam,Hetero Labs,2027-07-16,18,167.43
+768,Alprazolam 10ml cream,Takeda,2025-12-31,154,1292.84
+769,Ceftriaxone,Indoco Remedies,2027-01-27,191,1177.97
+770,Cetirizine-D,Aurobindo Pharma,2023-04-05,32,1458.27
+771,Pregabalin 125mg capsule,Zydus Cadila,2024-11-14,101,214.99
+772,Losartan,Emcure,2023-08-09,6,1544.16
+773,Salicylic Acid,Dr. Reddy's,2024-03-01,67,1240.02
+774,Simvastatin,Novartis,2026-06-21,58,502.32
+775,Insulin NPH,Lupin,2024-06-21,134,1678.65
+776,Azithromycin 10ml gel,Emcure,2028-03-28,138,1870.37
+777,Pseudoephedrine,Takeda,2024-12-26,151,1199.19
+778,Fenofibrate,Alembic,2027-11-17,134,1283.18
+779,Erythromycin 10ml drop,Wockhardt,2025-07-19,22,889.3
+780,Citalopram,Lupin,2026-05-28,2,10.18
+781,Promethazine,Pfizer,2026-03-20,120,1074.85
+782,Valproate,Indoco Remedies,2028-05-08,76,28.17
+783,B12 Injection,Hetero Labs,2025-08-05,1,1100.94
+784,Prednisolone,Wockhardt,2027-11-26,101,507.29
+785,Methotrexate,Novartis,2027-03-30,56,533.33
+786,Furosemide,MacLeods,2026-01-18,72,1300.43
+787,Erythromycin,Sanofi,2025-02-09,17,372.99
+788,Levothyroxine 10mg drop,Mankind Pharma,2028-07-08,48,648.08
+789,Calcium 2mg tablet,Aurobindo Pharma,2024-02-23,72,545.7
+790,Methotrexate,Cipla,2025-08-11,23,309.86
+791,Bacitracin 20mg cream,Emcure,2027-03-02,118,1396.9
+792,Cefixime 250mg tablet,Mankind Pharma,2027-05-27,18,1090.95
+793,Naproxen 5ml suspension,Cipla,2024-05-14,196,1432.22
+794,Clopidogrel,Bayer,2025-10-09,188,1989.13
+795,Hydrocortisone,Indoco Remedies,2024-01-20,133,1335.36
+796,Salbutamol,Galderma,2026-07-02,82,325.64
+797,Cyclophosphamide 2mg capsule,Mankind Pharma,2028-05-25,163,604.64
+798,Citalopram,Galderma,2025-06-11,28,479.57
+799,B12 Injection 250mg cream,Alembic,2024-05-05,101,1580.4
+800,Ibuprofen,Alembic,2028-04-30,176,1196.46
+801,Escitalopram,Torrent Pharma,2024-10-07,127,191.89
+802,Ezetimibe 250mcg tablet,Sun Pharma,2026-12-27,165,316.3
+803,Erythromycin,Lupin,2028-06-21,59,640.31
+804,Gaviscon,Indoco Remedies,2026-11-23,112,1469.05
+805,Amoxicillin,Pfizer,2024-07-05,64,1798.34
+806,Neomycin,Wockhardt,2026-04-22,138,1397.11
+807,Prednisolone,Wockhardt,2026-11-25,82,1467.48
+808,Insulin Regular,Hetero Labs,2024-10-18,17,1066.96
+809,Cetirizine-D 5ml gel,Bayer,2023-01-03,198,1279.67
+810,Aspirin,Cipla,2027-01-31,198,1244.19
+811,Domperidone,Galderma,2027-05-07,48,1052.9
+812,Bacitracin,Lupin,2026-03-05,82,825.51
+813,Domperidone 2mg capsule,Sun Pharma,2024-06-15,45,1748.25
+814,Hydrocortisone 500mg capsule,Sun Pharma,2027-05-11,168,984.92
+815,Ezetimibe,Mankind Pharma,2023-07-21,93,449.24
+816,Methotrexate 500mg drop,Dr. Reddy's,2028-04-01,163,130.79
+817,Gaviscon,Sanofi,2027-02-20,181,126.02
+818,Vildagliptin 50mg capsule,Biocon,2023-11-16,55,1921.57
+819,Pantoprazole 500mg suspension,Zydus Cadila,2025-03-02,134,1317.18
+820,Sodium Bicarbonate,Aurobindo Pharma,2027-08-28,191,219.97
+821,Niacin,Galderma,2028-02-22,179,1333.83
+822,Ranitidine 250mg suspension,MacLeods,2026-10-14,168,324.77
+823,Linagliptin,Pfizer,2026-07-14,140,1983.01
+824,Domperidone,Sanofi,2027-10-30,185,653.67
+825,Fluconazole,Zydus Cadila,2027-03-17,196,1104.98
+826,Cyclosporine 10mg drop,Novartis,2023-01-01,185,78.98
+827,Insulin NPH,MacLeods,2024-07-07,77,23.07
+828,Montelukast 10ml tablet,Indoco Remedies,2026-02-04,141,1027.43
+829,Dextromethorphan,Lupin,2024-01-22,9,926.14
+830,Calcium 10ml injection,Torrent Pharma,2025-11-15,76,192.89
+831,Enalapril,Zydus Cadila,2023-11-13,185,656.14
+832,Mupirocin 125mg capsule,Hetero Labs,2026-05-15,9,1464.27
+833,Dextromethorphan 50mg gel,Pfizer,2027-11-14,106,1861.19
+834,Loratadine,Torrent Pharma,2023-02-16,162,1557.06
+835,Aspirin 2mg tablet,Abbott,2024-09-04,83,1009.78
+836,Montelukast 250mcg suspension,Bayer,2028-08-29,23,451.95
+837,Levothyroxine,Lupin,2024-06-25,86,174.26
+838,Dextromethorphan,Wockhardt,2027-06-24,67,179.31
+839,Ketoconazole,Takeda,2024-06-18,195,278.39
+840,Gaviscon 20mg injection,Wockhardt,2028-11-17,63,492.21
+841,Ceftriaxone,Abbott,2024-01-02,28,1346.78
+842,Furosemide 500mg gel,Pfizer,2023-04-10,197,616.59
+843,Sertraline,Bayer,2024-08-20,112,99.31
+844,Metronidazole 10ml syrup,Indoco Remedies,2023-12-18,28,1481.77
+845,Doxycycline,Lupin,2026-03-24,3,693.11
+846,Cetirizine 10mg tablet,Abbott,2025-05-06,189,1080.63
+847,Salbutamol,Indoco Remedies,2025-11-25,140,971.22
+848,Cyclophosphamide,Takeda,2023-03-17,96,1170.18
+849,Pregabalin,Mankind Pharma,2024-11-28,15,575.19
+850,Lamotrigine,Sun Pharma,2028-03-19,167,1890.9
+851,Losartan 5ml gel,Glenmark,2023-03-20,74,1736.15
+852,Donepezil 20mg capsule,Abbott,2028-06-08,152,1067.81
+853,Naproxen 10mg tablet,Sun Pharma,2025-10-10,135,616.81
+854,Neomycin 250mg tablet,Pfizer,2026-12-12,90,1254.21
+855,Fluconazole,MacLeods,2026-02-03,15,1255.33
+856,Clopidogrel,Cipla,2026-02-21,57,311.9
+857,Warfarin,Dr. Reddy's,2027-04-15,133,1921.61
+858,Vildagliptin,Galderma,2025-07-20,106,488.32
+859,Calcium,Biocon,2026-09-10,114,1089.05
+860,Salbutamol,Alembic,2025-04-08,35,624.91
+861,Hydroxychloroquine,Lupin,2027-10-28,197,298.85
+862,Sodium Bicarbonate,Abbott,2023-10-05,142,1070.59
+863,Azathioprine 10ml syrup,RPG Life Sciences,2023-05-01,195,644.19
+864,Ramipril,Biocon,2027-12-20,190,1868.2
+865,Niacin,Mankind Pharma,2024-09-14,199,383.99
+866,Levocetirizine 1mg cream,Hetero Labs,2025-08-03,152,472.04
+867,Levetiracetam 100mg drop,Lupin,2028-08-19,154,942.84
+868,Donepezil 20mg drop,Emcure,2024-07-17,41,394.59
+869,Cefixime,Cipla,2026-01-10,105,452.88
+870,Gabapentin,Indoco Remedies,2025-04-17,16,362.39
+871,Multivitamin,Emcure,2026-08-23,117,1776.3
+872,Furosemide,Sun Pharma,2027-04-08,184,632.67
+873,Vildagliptin,Alembic,2028-11-21,164,1752.81
+874,Cefixime,Bayer,2028-02-15,10,1756.78
+875,Doxycycline,Novartis,2023-06-10,142,780.92
+876,Promethazine,Sun Pharma,2025-02-16,74,884.71
+877,Sildenafil,Biocon,2028-03-04,42,850.7
+878,Vildagliptin,Takeda,2028-10-18,36,932.52
+879,Rivastigmine,RPG Life Sciences,2028-08-12,28,367.75
+880,Oxymetazoline,Takeda,2024-07-08,100,832.98
+881,Cetirizine-D 10mg injection,Bayer,2024-01-05,64,654.91
+882,Donepezil,Aurobindo Pharma,2024-05-21,23,237.19
+883,Cetirizine-D,Dr. Reddy's,2028-11-15,181,774.33
+884,Clotrimazole,Aurobindo Pharma,2027-04-01,140,767.41
+885,Propranolol 10ml syrup,Aurobindo Pharma,2024-08-15,45,1540.62
+886,Glibenclamide,Biocon,2028-01-02,73,1256.64
+887,Loratadine,Zydus Cadila,2023-01-15,159,1533.14
+888,Ibuprofen,Emcure,2023-01-24,155,1766.58
+889,Fluconazole 250mcg drop,Bayer,2027-08-07,113,168.02
+890,Linagliptin 2mg cream,Hetero Labs,2025-04-30,12,377.83
+891,Amlodipine,Sun Pharma,2024-08-18,8,1337.32
+892,Sitagliptin 100mg tablet,Glenmark,2027-09-04,45,331.06
+893,Insulin NPH,Takeda,2024-12-27,116,1501.18
+894,Citalopram,Dr. Reddy's,2026-05-10,82,743.45
+895,Aspirin,Indoco Remedies,2027-10-17,140,139.2
+896,Lorazepam 125mg cream,Abbott,2028-11-28,105,1054.05
+897,Lamotrigine 50mg capsule,Alembic,2028-12-06,22,972.49
+898,Valproate,Takeda,2026-03-22,109,1221.6
+899,Metoclopramide 1mg gel,Lupin,2028-07-26,133,1461.08
+900,Bacitracin,Aurobindo Pharma,2025-08-11,181,588.07
+901,Prednisolone 50mg drop,Merck,2024-04-28,188,1697.66
+902,Vildagliptin,Sanofi,2023-07-06,85,705.8
+903,Niacin 250mcg injection,Takeda,2026-02-27,65,1582.49
+904,Tadalafil 2mg gel,Indoco Remedies,2023-01-26,29,1374.81
+905,Alprazolam 1mg tablet,Aurobindo Pharma,2025-03-05,84,1669.31
+906,Topiramate,Emcure,2023-05-26,165,280.15
+907,Calcium,Wockhardt,2026-10-04,118,1570.14
+908,Ramipril,Sun Pharma,2028-11-04,76,1134.24
+909,Topiramate 2mg tablet,Zydus Cadila,2026-09-20,90,141.76
+910,Calcium 50mg gel,Novartis,2028-12-28,42,1146.25
+911,Clopidogrel 100mg cream,Takeda,2026-07-12,181,72.94
+912,Ramipril 500mg gel,Bayer,2026-05-24,55,1054.95
+913,Diclofenac 50mg injection,Dr. Reddy's,2027-12-23,129,59.62
+914,Mupirocin,Lupin,2025-02-18,87,1848.04
+915,Cyclophosphamide,Biocon,2026-09-02,36,1541.27
+916,Pantoprazole,MacLeods,2024-06-27,52,1451.9
+917,Loperamide 2mg capsule,Cipla,2026-06-27,11,1377.23
+918,Linagliptin,Abbott,2028-03-27,11,215.17
+919,Propranolol,Biocon,2023-04-03,147,1519.4
+920,Niacin,Abbott,2025-04-01,49,580.27
+921,Erythromycin 10mg capsule,Mankind Pharma,2024-09-03,40,554.54
+922,Ibuprofen,Wockhardt,2028-10-06,26,421.09
+923,Sertraline,Mankind Pharma,2024-08-02,180,1609.97
+924,Dextromethorphan 100mg cream,Hetero Labs,2026-10-19,138,892.86
+925,Levocetirizine 250mcg tablet,Glenmark,2027-04-21,13,181.38
+926,Warfarin 1mg drop,Hetero Labs,2026-12-27,79,671.34
+927,Hydrocortisone,Galderma,2028-12-25,20,1947.63
+928,Ondansetron,Alembic,2024-06-23,23,1627.57
+929,Lamotrigine,Bayer,2026-06-25,175,1292.39
+930,Propranolol,Torrent Pharma,2025-07-05,36,1723.58
+931,Vildagliptin 10ml suspension,Aurobindo Pharma,2026-09-15,83,912.03
+932,Azithromycin 100mg gel,Emcure,2028-03-04,43,571.69
+933,Sertraline,Lupin,2028-09-11,26,817.32
+934,Methotrexate,Abbott,2023-10-18,77,1070.16
+935,Enalapril,Torrent Pharma,2025-09-25,140,326.45
+936,Mupirocin 10ml injection,Takeda,2027-11-01,200,1960.61
+937,Sodium Bicarbonate,Wockhardt,2025-08-25,44,1328.6
+938,Atorvastatin,Takeda,2028-06-16,29,1188.4
+939,Orlistat 100mg drop,Aurobindo Pharma,2026-06-15,103,148.52
+940,Ranitidine,Hetero Labs,2027-04-02,83,993.65
+941,Pregabalin 500mg syrup,Alembic,2023-01-01,193,301.98
+942,Calcium,Biocon,2027-05-17,157,1160.08
+943,Hydrocortisone 10ml cream,Alembic,2026-06-01,111,1438.4
+944,Sertraline,Alembic,2023-02-03,156,1972.98
+945,Enalapril,Biocon,2023-09-13,94,1803.14
+946,Glibenclamide 2mg gel,Glenmark,2026-03-01,7,478.13
+947,Lamotrigine,Merck,2026-07-27,182,771.75
+948,Aspirin,Zydus Cadila,2024-12-11,121,286.75
+949,Gaviscon 10ml suspension,Lupin,2026-03-27,171,259.84
+950,Ibuprofen 50mg syrup,RPG Life Sciences,2028-06-16,168,879.1
+951,Vitamin C 250mcg suspension,Bayer,2027-10-10,159,367.8
+952,Clotrimazole,Bayer,2027-04-25,90,459.22
+953,Furosemide,Alembic,2028-08-02,187,481.13
+954,Ketoconazole 2mg gel,Sun Pharma,2023-06-05,145,971.7
+955,Escitalopram 10mg capsule,Lupin,2028-11-26,192,1559.95
+956,Orlistat,MacLeods,2023-12-29,62,950.18
+957,Tacrolimus,Galderma,2023-11-16,175,1271.04
+958,Oxymetazoline 50mg gel,Wockhardt,2023-02-14,120,913.53
+959,Lorazepam,Abbott,2027-09-21,90,1921.56
+960,Levothyroxine 50mg cream,RPG Life Sciences,2025-12-02,15,1262.31
+961,Oxymetazoline 50mg cream,RPG Life Sciences,2023-04-22,73,974.67
+962,Levocetirizine,Mankind Pharma,2025-10-29,33,1235.44
+963,Insulin Regular,Cipla,2024-04-01,154,357.48
+964,Insulin Glargine,Galderma,2028-01-04,94,1617.6
+965,Cefuroxime,Torrent Pharma,2028-06-09,46,1600.75
+966,Cefixime 100mg syrup,Hetero Labs,2024-09-23,126,1507.99
+967,Ramipril,Torrent Pharma,2027-12-08,185,1278.77
+968,Salbutamol,Pfizer,2023-08-11,164,536.15
+969,Cetirizine 10mg suspension,Emcure,2026-05-19,121,1494.84
+970,Ondansetron,Torrent Pharma,2027-04-05,174,1414.16
+971,Lorazepam 2mg suspension,Cipla,2026-03-28,114,770.19
+972,Metoclopramide,Galderma,2023-06-18,24,1836.25
+973,Niacin 20mg cream,Abbott,2026-01-12,68,1606.61
+974,Clarithromycin,Novartis,2028-03-03,197,1353.83
+975,Fluconazole,Alembic,2025-03-09,133,681.44
+976,Valproate,Abbott,2023-02-13,172,26.87
+977,Losartan 100mg capsule,Galderma,2028-01-01,89,446.64
+978,Insulin NPH 50mg tablet,Hetero Labs,2024-01-12,14,1877.63
+979,Pregabalin,Zydus Cadila,2024-05-13,181,1916.01
+980,Omeprazole,Lupin,2027-03-20,168,1530.08
+981,Rivastigmine,Aurobindo Pharma,2024-03-30,178,376.68
+982,Levothyroxine,Dr. Reddy's,2028-02-01,70,1541.02
+983,Valproate,Indoco Remedies,2026-08-17,65,332.31
+984,Atorvastatin 50mg suspension,Novartis,2026-09-24,15,523.89
+985,Cefuroxime 100mg drop,Zydus Cadila,2027-05-28,45,1294.51
+986,Ranitidine 20mg injection,Hetero Labs,2024-03-11,113,1433.65
+987,Ranitidine 100mg cream,Indoco Remedies,2028-01-01,4,1794.06
+988,Calcium,Cipla,2023-06-04,170,787.06
+989,Calcium,Novartis,2023-01-16,131,1418.14
+990,Propranolol,Sanofi,2027-07-13,186,1564.06
+991,Losartan,Cipla,2027-04-24,176,1637.77
+992,Mupirocin 2mg gel,Abbott,2026-05-25,102,119.84
+993,Rivastigmine 2mg gel,Dr. Reddy's,2028-02-26,194,1535.35
+994,Rivastigmine 2mg tablet,Novartis,2025-02-21,76,1394.81
+995,Ranitidine,Pfizer,2028-06-15,21,1771.58
+996,Multivitamin,Lupin,2023-05-27,49,60.48
+997,Insulin Glargine 20mg capsule,Wockhardt,2026-06-14,127,1072.54
+998,Cetirizine-D,Cipla,2023-06-01,86,121.55
+999,Azathioprine 100mg injection,Merck,2028-11-12,117,1880.78
+1000,Erythromycin 1mg injection,Dr. Reddy's,2023-06-01,188,291.77
+1001,doloo,cipla,2026-12-04,0,96
+1002,dolo,cipla,2026-12-12,0,46
